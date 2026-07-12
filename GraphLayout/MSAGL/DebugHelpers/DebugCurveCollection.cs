@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
-using System.Text.Json;
 
 namespace Microsoft.Msagl.DebugHelpers{
     /// <summary>
@@ -30,15 +29,11 @@ namespace Microsoft.Msagl.DebugHelpers{
         ///<param name="fileName"></param>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2000:Dispose objects before losing scope")]
         public static void WriteToFile(IEnumerable<DebugCurve> debugCurves, string fileName) {
-            var options = new JsonSerializerOptions
-            {
-                WriteIndented = true
-            };
-
+            // VoidCat fork: System.Text.Json dependency removed — debug-curve dumps
+            // are disabled (Unity editor has no System.Text.Json by default).
             try
             {
-                string jsonString = JsonSerializer.Serialize(new DebugCurveCollection(debugCurves), options);
-                File.WriteAllText(fileName, jsonString);
+                System.Diagnostics.Debug.WriteLine($"DebugCurveCollection.WriteToFile disabled in VoidCat fork ({fileName}).");
             }
             catch (Exception e)
             {
@@ -53,9 +48,8 @@ namespace Microsoft.Msagl.DebugHelpers{
         public static IEnumerable<DebugCurve> ReadFromFile(string fileName) {
             try
             {
-                string jsonString = File.ReadAllText(fileName);
-                var debugCurveCollection = JsonSerializer.Deserialize<DebugCurveCollection>(jsonString);
-                return new List<DebugCurve>(debugCurveCollection.DebugCurvesArray);
+                System.Diagnostics.Debug.WriteLine($"DebugCurveCollection.ReadFromFile disabled in VoidCat fork ({fileName}).");
+                return new List<DebugCurve>();
             }
             catch (Exception e)
             {
