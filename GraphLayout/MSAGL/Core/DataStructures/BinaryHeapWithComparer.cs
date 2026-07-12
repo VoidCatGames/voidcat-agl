@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Microsoft.Msagl.Core.DataStructures {
+namespace VoidCat.Agl.Core.DataStructures {
     /// <summary>
     /// A priority queue based on the binary heap algorithm.
     /// This class needs a comparer object to compare elements of the queue.

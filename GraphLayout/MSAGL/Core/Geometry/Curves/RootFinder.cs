@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     /// <summary>
     /// looking for a root of a function on a given segment
     /// </summary>

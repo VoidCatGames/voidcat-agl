@@ -1,7 +1,7 @@
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Rectilinear.Nudging {
+namespace VoidCat.Agl.Routing.Rectilinear.Nudging {
     /// <summary>
     /// A place holder for an edge in a path to keep it inside of a linked list representing a path.
     /// Each PathEdge belongs to only one path

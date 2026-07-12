@@ -1,6 +1,6 @@
-﻿using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 
-namespace Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation {
+namespace VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation {
     internal class CdtFront  {
         RbTree<CdtSite> front = new RbTree<CdtSite>((a, b) => a.Point.X.CompareTo(b.Point.X));
 

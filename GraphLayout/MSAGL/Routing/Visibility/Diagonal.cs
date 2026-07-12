@@ -1,8 +1,8 @@
 using System;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
     internal class Diagonal {
 
         public override string ToString() {

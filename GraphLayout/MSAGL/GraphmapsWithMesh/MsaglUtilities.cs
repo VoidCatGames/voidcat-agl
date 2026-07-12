@@ -1,7 +1,7 @@
-﻿using System;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using System;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.GraphmapsWithMesh
+namespace VoidCat.Agl.GraphmapsWithMesh
 {
     class MsaglUtilities
     {

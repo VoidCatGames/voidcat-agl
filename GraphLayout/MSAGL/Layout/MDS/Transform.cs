@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Microsoft.Msagl.Layout.MDS {
+namespace VoidCat.Agl.Layout.MDS {
     /// <summary>
     /// Class for graoh layout with Multidimensional Scaling.
     /// </summary>

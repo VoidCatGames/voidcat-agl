@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.LargeGraphLayout {
+namespace VoidCat.Agl.Layout.LargeGraphLayout {
     internal class LgNodeCollection : IList<Node> {
         readonly Func<IEnumerable<Node>> funcOfNodes;
 

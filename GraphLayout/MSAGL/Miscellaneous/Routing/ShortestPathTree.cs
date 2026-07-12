@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Miscellaneous.Routing
+namespace VoidCat.Agl.Miscellaneous.Routing
 {
     public class ShortestPathTree
     {

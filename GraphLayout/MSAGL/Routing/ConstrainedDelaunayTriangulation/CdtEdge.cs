@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation;
 
-namespace Microsoft.Msagl.Routing {
+namespace VoidCat.Agl.Routing {
     /// <summary>
     /// the edge direction is from the upperSite to lowerSite
     /// </summary>

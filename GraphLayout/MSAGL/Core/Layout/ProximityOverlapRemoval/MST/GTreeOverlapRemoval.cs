@@ -2,18 +2,18 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.DebugHelpers;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.DebugHelpers;
 #if SHARPKIT
 #else
-using Microsoft.Msagl.Layout.LargeGraphLayout;
+using VoidCat.Agl.Layout.LargeGraphLayout;
 #endif
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree {
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree {
     internal struct OverlappedEdge {
         internal int source; internal int target; internal double overlapFactor; internal double idealDistance; internal double weight;
         internal static OverlappedEdge Create(int source, int target, double overlapFactor, double idealDistance, double weight) => new OverlappedEdge { source = source, target = target, overlapFactor = overlapFactor, idealDistance = idealDistance, weight = weight };

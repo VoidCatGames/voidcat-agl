@@ -7,11 +7,11 @@
 using System;
 using System.Diagnostics;
 
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Rectilinear{
+namespace VoidCat.Agl.Routing.Rectilinear{
     using SegmentAndCrossings = Tuple<LineSegment, PointAndCrossingsList>;
 
     /// <summary>

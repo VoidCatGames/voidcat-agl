@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.GraphAlgorithms {
+namespace VoidCat.Agl.Core.GraphAlgorithms {
     internal class BasicGraph<TNode, TEdge> : BasicGraphOnEdges<TEdge> where TEdge : IEdge
     {
         

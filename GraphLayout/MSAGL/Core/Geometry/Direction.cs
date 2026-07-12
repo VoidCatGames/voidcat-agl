@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
  /// <summary>
  /// enumerates the compass directions
  /// </summary>

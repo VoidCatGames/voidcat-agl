@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 
 // Retain SolverFoundation code for the moment in case it's useful for testing.
 // To use it, edit MSAGL Project properties to enable the SOLVERFOUNDATION #define
@@ -15,7 +15,7 @@ using Microsoft.SolverFoundation.Services;
 #endif // SOLVERFOUNDATION
 
 // ReSharper disable CheckNamespace
-namespace Microsoft.Msagl.Core.ProjectionSolver{
+namespace VoidCat.Agl.Core.ProjectionSolver{
 // ReSharper restore CheckNamespace
     /// <summary>
     /// just a convenient interface to the real solver
@@ -304,4 +304,4 @@ namespace Microsoft.Msagl.Core.ProjectionSolver{
             get { return solution; }
         }
     } // end class SolverShell
-} // end namespace Microsoft.Msagl
+} // end namespace VoidCat.Agl

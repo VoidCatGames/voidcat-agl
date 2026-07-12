@@ -1,14 +1,14 @@
 using System;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
-using Microsoft.Msagl.Layout.MDS;
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.Rectilinear;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
+using VoidCat.Agl.Layout.MDS;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.Rectilinear;
 
-namespace Microsoft.Msagl.Prototype.Ranking {
+namespace VoidCat.Agl.Prototype.Ranking {
     /// <summary>
     /// Ranking layout for directed graphs.
     /// </summary>
@@ -69,7 +69,7 @@ namespace Microsoft.Msagl.Prototype.Ranking {
 
             if (graphs.Length > 1)
             {
-                Microsoft.Msagl.Layout.MDS.MdsGraphLayout.PackGraphs(graphs, settings);
+                VoidCat.Agl.Layout.MDS.MdsGraphLayout.PackGraphs(graphs, settings);
                 //restore the parents
                 foreach (var node in graphs.SelectMany(g => g.Nodes))
                     node.GeometryParent = graph;

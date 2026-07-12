@@ -10,7 +10,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.Geometry
+namespace VoidCat.Agl.Core.Geometry
 {
     /// <summary>
     /// A node essentially wraps the coordinates of a Variable for the Open and Close Events for

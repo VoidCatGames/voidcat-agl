@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Collections;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Layout.LargeGraphLayout;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Layout.LargeGraphLayout;
 
-namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
     /// <summary>
     /// A collection of edges.  Adding or removing edges from the collection automatically updates the related nodes.
     /// </summary>

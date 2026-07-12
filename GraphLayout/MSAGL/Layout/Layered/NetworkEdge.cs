@@ -1,7 +1,7 @@
 using System;
-using Microsoft.Msagl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.GraphAlgorithms;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// Differs from IntEdge in containing a flag indicating belonging to the tree
     /// and containing the cut value

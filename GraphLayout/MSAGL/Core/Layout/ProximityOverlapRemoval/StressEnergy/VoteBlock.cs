@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.StressEnergy
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.StressEnergy
 {
     /// <summary>
     /// Votes are separated into block, so that their weight (BlockWeight) can easily be adjusted

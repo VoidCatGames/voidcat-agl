@@ -1,8 +1,8 @@
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Spline.ConeSpanner
+namespace VoidCat.Agl.Routing.Spline.ConeSpanner
 {
          abstract class ObstacleSide : SegmentBase
     {

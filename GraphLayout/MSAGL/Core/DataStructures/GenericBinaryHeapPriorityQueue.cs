@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Microsoft.Msagl.Core.DataStructures {
+namespace VoidCat.Agl.Core.DataStructures {
 
 
     /// <summary>

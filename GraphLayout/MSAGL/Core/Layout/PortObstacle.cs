@@ -1,6 +1,6 @@
-﻿using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Core.Layout{
+namespace VoidCat.Agl.Core.Layout{
     struct PortObstacle : IObstacle {
         internal Point Location;
         internal PortObstacle(Point c) {

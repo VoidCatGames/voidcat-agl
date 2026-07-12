@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 
-namespace Microsoft.Msagl.GraphmapsWithMesh
+namespace VoidCat.Agl.GraphmapsWithMesh
 {
     public class PointToSegmentDistance
     {
-        public static double GetDistance(Microsoft.Msagl.Core.Geometry.Point pointA, Microsoft.Msagl.Core.Geometry.Point pointB, Microsoft.Msagl.Core.Geometry.Point pointC)
+        public static double GetDistance(VoidCat.Agl.Core.Geometry.Point pointA, VoidCat.Agl.Core.Geometry.Point pointB, VoidCat.Agl.Core.Geometry.Point pointC)
         {
             return GetDistance(new Vertex((int)pointA.X, (int)pointA.Y), new Vertex((int)pointB.X, (int)pointB.Y), new Vertex((int)pointC.X, (int)pointC.Y));
         }
-        public static Microsoft.Msagl.Core.Geometry.Point getClosestPoint(Vertex pointA, Vertex pointB, Vertex pointP)
+        public static VoidCat.Agl.Core.Geometry.Point getClosestPoint(Vertex pointA, Vertex pointB, Vertex pointP)
         {
 
             double[] AP = new double[2];
@@ -27,7 +27,7 @@ namespace Microsoft.Msagl.GraphmapsWithMesh
             if (t > 1) t = 1;
             double pointx = pointA.XLoc + AB[0] * t;
             double pointy = pointA.YLoc + AB[1] * t;
-            return new Microsoft.Msagl.Core.Geometry.Point(pointx, pointy);
+            return new VoidCat.Agl.Core.Geometry.Point(pointx, pointy);
         }
         //Compute the distance from AB to C
         //if isSegment is true, AB is a segment, not a line.

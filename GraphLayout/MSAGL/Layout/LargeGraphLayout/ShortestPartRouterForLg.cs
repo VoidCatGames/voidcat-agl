@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.LargeGraphLayout {
+namespace VoidCat.Agl.Layout.LargeGraphLayout {
     internal class ShortestPartRouterForLg {
         readonly Node source;
         readonly Node target;

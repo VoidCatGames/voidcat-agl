@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Layout.LargeGraphLayout
+namespace VoidCat.Agl.Layout.LargeGraphLayout
 {
     public class LgCellInfo
     {

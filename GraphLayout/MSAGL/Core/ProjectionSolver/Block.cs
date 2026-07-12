@@ -16,7 +16,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Microsoft.Msagl.Core.ProjectionSolver
+namespace VoidCat.Agl.Core.ProjectionSolver
 {
     // A Block is essentially a collection of Variables, which in turn contain
     // a collection of Constraints.

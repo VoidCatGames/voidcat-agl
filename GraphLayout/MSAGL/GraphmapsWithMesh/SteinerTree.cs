@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 
-namespace Microsoft.Msagl.GraphmapsWithMesh
+namespace VoidCat.Agl.GraphmapsWithMesh
 {
     class SteinerTree
     {

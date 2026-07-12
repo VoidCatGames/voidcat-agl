@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Prototype.LayoutEditing{
+namespace VoidCat.Agl.Prototype.LayoutEditing{
     /// <summary>
     /// holds the data needed to restore the edge after the editing
     /// </summary>

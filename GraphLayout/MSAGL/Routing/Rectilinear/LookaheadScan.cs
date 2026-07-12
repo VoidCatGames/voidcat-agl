@@ -7,12 +7,12 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using RectRout = Microsoft.Msagl.Routing.Rectilinear;
-using Microsoft.Msagl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using RectRout = VoidCat.Agl.Routing.Rectilinear;
+using VoidCat.Agl.Core;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     /// <summary>
     /// For lookahead points, we record the point of the intersection on the reflecting side, then
     /// whenever we load a side, we check for active lookahead lines within this range.  Since we

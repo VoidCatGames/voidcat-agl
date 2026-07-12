@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Microsoft.Msagl.Core.ProjectionSolver
+namespace VoidCat.Agl.Core.ProjectionSolver
 {
     /// <summary>
     /// A Variable is essentially a wrapper around a node, containing the node's initial and 

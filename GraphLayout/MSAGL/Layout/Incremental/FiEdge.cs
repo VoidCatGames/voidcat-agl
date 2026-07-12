@@ -1,8 +1,8 @@
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Incremental {
+namespace VoidCat.Agl.Layout.Incremental {
     /// <summary>
     /// An edge is a pair of nodes and an ideal length required between them
     /// </summary>

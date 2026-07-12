@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.GraphAlgorithms;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// This class holds assorted data associated with the graph under layout: list of anchors, 
     /// edges sorted by their sources,targets etc

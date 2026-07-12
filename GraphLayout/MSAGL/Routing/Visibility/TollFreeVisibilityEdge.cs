@@ -4,7 +4,7 @@
 //
 // Copyright Microsoft Corporation.
 
-namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
     /// <summary>
     /// passing through such an edge does not cost anything
     /// </summary>

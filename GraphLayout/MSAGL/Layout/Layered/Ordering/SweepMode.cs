@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     internal enum SweepMode {
         ComingFromBelow,
         ComingFromAbove,

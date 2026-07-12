@@ -1,9 +1,9 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
     /// <summary>
     /// an edge connecting two VisibilityVertices
     /// </summary>

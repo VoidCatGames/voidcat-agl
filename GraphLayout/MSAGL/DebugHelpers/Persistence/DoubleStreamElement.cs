@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Msagl.DebugHelpers {
+namespace VoidCat.Agl.DebugHelpers {
     internal class DoubleStreamElement : CurveStreamElement {
         public DoubleStreamElement(double res) {
             Value = res;

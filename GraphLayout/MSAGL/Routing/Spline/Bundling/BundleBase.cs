@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Routing.Spline.Bundling {
+namespace VoidCat.Agl.Routing.Spline.Bundling {
     internal class BundleBase {
 
         /// <summary>

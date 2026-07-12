@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 
-namespace Microsoft.Msagl.Core.GraphAlgorithms {
+namespace VoidCat.Agl.Core.GraphAlgorithms {
 
     /// <summary>
     /// The base class for graphs: layering and ordering work on an instance of this class.

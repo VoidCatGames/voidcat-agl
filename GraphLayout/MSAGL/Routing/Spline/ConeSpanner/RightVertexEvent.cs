@@ -1,6 +1,6 @@
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Spline.ConeSpanner {
+namespace VoidCat.Agl.Routing.Spline.ConeSpanner {
     internal class RightVertexEvent : VertexEvent {
         internal RightVertexEvent(PolylinePoint p) : base(p) { }
     }

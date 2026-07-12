@@ -1,6 +1,6 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 
-namespace Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation {
+namespace VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation {
     /// <summary>
     /// 
     /// </summary>

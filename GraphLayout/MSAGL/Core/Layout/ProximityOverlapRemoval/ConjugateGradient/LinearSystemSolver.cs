@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Linq;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient {
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient {
     /// <summary>
     /// Solver for a linear system of equations of the form Ax=b.
     /// </summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient 
         }
 
         /// <summary>
-        /// Preconditioned Conjugate Gradient Method <see cref="SolveConjugateGradient(Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.SparseMatrix,Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,int,double)"/>
+        /// Preconditioned Conjugate Gradient Method <see cref="SolveConjugateGradient(VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.SparseMatrix,VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,int,double)"/>
         /// Preconditioner: Jacobi Preconditioner.
         /// This method should generally be preferred, due to its faster convergence.
         /// </summary>
@@ -90,7 +90,7 @@ namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient 
 
 
         /// <summary>
-        /// Conjugate Gradient Method which is guaranteed to converge in n steps, <see cref="SolveConjugateGradient(Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.SparseMatrix,Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,int,double)"/>
+        /// Conjugate Gradient Method which is guaranteed to converge in n steps, <see cref="SolveConjugateGradient(VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.SparseMatrix,VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,int,double)"/>
         /// </summary>
         /// <param name="A"></param>
         /// <param name="b"></param>
@@ -104,7 +104,7 @@ namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient 
         }
 
         /// <summary>
-        ///     Preconditioned Conjugate Gradient method, where the preconditioner M is the diagonal of A (Jacobi Preconditioner), <seealso cref="SolvePrecondConjugateGradient(Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.SparseMatrix,Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,int,double)"/>
+        ///     Preconditioned Conjugate Gradient method, where the preconditioner M is the diagonal of A (Jacobi Preconditioner), <seealso cref="SolvePrecondConjugateGradient(VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.SparseMatrix,VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient.Vector,int,double)"/>
         /// </summary>
         /// <param name="A"></param>
         /// <param name="b"></param>

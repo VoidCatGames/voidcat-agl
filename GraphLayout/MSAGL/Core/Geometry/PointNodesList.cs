@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     internal class PointNodesList : IEnumerator<Point>, IEnumerable<Point> {
         CornerSite current, head;
 

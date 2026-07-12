@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Routing.Visibility;
 using System.Linq;
 
-namespace Microsoft.Msagl.Routing.Spline.ConeSpanner
+namespace VoidCat.Agl.Routing.Spline.ConeSpanner
 {
     internal class ConeSpannerForPortLocations : AlgorithmBase {
 

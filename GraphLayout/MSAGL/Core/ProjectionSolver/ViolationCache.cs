@@ -22,7 +22,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Core.ProjectionSolver
+namespace VoidCat.Agl.Core.ProjectionSolver
 {
     // The ViolationCache stores the top N maximum violations initially, allowing
     // a reduction in the number of times we do a full search of all constraints.

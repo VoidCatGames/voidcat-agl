@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing {
+namespace VoidCat.Agl.Routing {
     
     internal class MultipleSourceMultipleTargetsShortestPathOnVisibilityGraph {
         //we are not using the A* algorithm since it does not make much sense for muliple targets

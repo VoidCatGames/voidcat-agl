@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     /// <summary>
     /// A class for keeping polyline points in a double linked list
     /// </summary>

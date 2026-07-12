@@ -1,5 +1,5 @@
 using System;
-namespace Microsoft.Msagl.Core.DataStructures {
+namespace VoidCat.Agl.Core.DataStructures {
     
 
     [Serializable]

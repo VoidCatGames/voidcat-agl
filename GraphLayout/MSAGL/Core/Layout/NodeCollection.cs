@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Collections;
 
-namespace Microsoft.Msagl.Core.Layout
+namespace VoidCat.Agl.Core.Layout
 {
     /// <summary>
     /// A collection of nodes.  Adding or removing nodes from the collection automatically updates the graph.

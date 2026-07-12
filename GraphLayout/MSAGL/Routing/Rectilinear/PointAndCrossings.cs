@@ -4,9 +4,9 @@
 //
 // Copyright Microsoft Corporation.
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     internal struct PointAndCrossings {
         internal Point Location { get; private set; }
         internal List<GroupBoundaryCrossing> Crossings { get; private set; }

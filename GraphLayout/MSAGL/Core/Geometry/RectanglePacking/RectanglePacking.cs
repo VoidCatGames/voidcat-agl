@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
-namespace Microsoft.Msagl.Core.Geometry
+namespace VoidCat.Agl.Core.Geometry
 {
     /// <summary>
     /// Greedily pack rectangles (without rotation) into a given aspect ratio

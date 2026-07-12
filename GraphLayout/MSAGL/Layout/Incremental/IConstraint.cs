@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Incremental {
+namespace VoidCat.Agl.Layout.Incremental {
     /// <summary>
     /// A constraint must provide a method to find a feasible starting configuration, 
     /// and a method to satisfy the constraint by moving the affected nodes as little as possible

@@ -1,5 +1,5 @@
-using Microsoft.Msagl.Core;
-namespace Microsoft.Msagl.Layout.Layered {
+using VoidCat.Agl.Core;
+namespace VoidCat.Agl.Layout.Layered {
     internal class FlatEdgeRouter : AlgorithmBase {
         readonly Routing routing;
         private SugiyamaLayoutSettings settings;

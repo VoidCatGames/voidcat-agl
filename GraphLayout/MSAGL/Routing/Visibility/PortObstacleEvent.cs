@@ -1,7 +1,7 @@
-﻿using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.Spline.ConeSpanner;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.Spline.ConeSpanner;
 
-namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
     internal class PortObstacleEvent : SweepEvent {
         readonly Point site;
 

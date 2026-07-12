@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
     /// <summary>
     /// At the moment it is an empty class
     /// </summary>

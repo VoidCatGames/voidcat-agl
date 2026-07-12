@@ -1,7 +1,7 @@
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Incremental {
+namespace VoidCat.Agl.Layout.Incremental {
     /// <summary>
     /// Keeps nodes within a specified distance of each other
     /// </summary>

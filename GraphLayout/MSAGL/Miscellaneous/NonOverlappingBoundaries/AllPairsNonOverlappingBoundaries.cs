@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Layout.Incremental;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Layout.Incremental;
 
-namespace Microsoft.Msagl.Prototype.NonOverlappingBoundaries {
+namespace VoidCat.Agl.Prototype.NonOverlappingBoundaries {
     /// <summary>
     /// A CvxHull is Convex hull
     /// </summary>

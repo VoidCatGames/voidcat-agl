@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Incremental {
+namespace VoidCat.Agl.Layout.Incremental {
     /// <summary>
     /// Fix the position of a node.
     /// Create locks using FastIncrementalLayoutSettings.CreateLock method.

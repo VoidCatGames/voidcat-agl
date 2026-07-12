@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry;
-using Point = Microsoft.Msagl.Core.Geometry.Point;
+using VoidCat.Agl.Core.Geometry;
+using Point = VoidCat.Agl.Core.Geometry.Point;
 
-using Rectangle = Microsoft.Msagl.Core.Geometry.Rectangle;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using SymmetricSegment = Microsoft.Msagl.Core.DataStructures.SymmetricTuple<Microsoft.Msagl.Core.Geometry.Point>;
+using Rectangle = VoidCat.Agl.Core.Geometry.Rectangle;
+using VoidCat.Agl.Core.Geometry.Curves;
+using SymmetricSegment = VoidCat.Agl.Core.DataStructures.SymmetricTuple<VoidCat.Agl.Core.Geometry.Point>;
 
 
-namespace Microsoft.Msagl.Layout.OverlapRemovalFixedSegments {
+namespace VoidCat.Agl.Layout.OverlapRemovalFixedSegments {
     public class OverlapRemovalFixedSegmentsBitmap {
         Rectangle[] _moveableRectangles;
         Rectangle[] _fixedRectangles;

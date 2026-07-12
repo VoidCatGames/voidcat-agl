@@ -1,4 +1,4 @@
-namespace Microsoft.Msagl.Routing
+namespace VoidCat.Agl.Routing
 {
     internal enum NodeKind {
         Top,

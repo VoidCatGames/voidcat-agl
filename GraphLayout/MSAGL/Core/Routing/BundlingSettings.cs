@@ -5,7 +5,7 @@ using System.ComponentModel;
 
 #endregion
 
-namespace Microsoft.Msagl.Core.Routing {
+namespace VoidCat.Agl.Core.Routing {
     ///<summary>
     ///</summary>
 

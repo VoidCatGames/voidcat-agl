@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     /// <summary>
     /// represents the polyline of an edge
     /// </summary>

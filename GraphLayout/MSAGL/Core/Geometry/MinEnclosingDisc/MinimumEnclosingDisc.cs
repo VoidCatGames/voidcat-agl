@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Core.Geometry
+namespace VoidCat.Agl.Core.Geometry
 {
     /// <summary>
     /// implementation of the "MoveToFront" method for computing the minimum enclosing disc of a collection of points.

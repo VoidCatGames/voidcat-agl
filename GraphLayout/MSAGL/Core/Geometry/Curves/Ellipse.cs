@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves{
+namespace VoidCat.Agl.Core.Geometry.Curves{
     /// <summary>
     /// A class representing an ellipse.
     /// </summary>

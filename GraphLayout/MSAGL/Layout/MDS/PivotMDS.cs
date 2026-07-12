@@ -1,12 +1,12 @@
 using System.Diagnostics;
 using System.Linq;
 
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.MDS
+namespace VoidCat.Agl.Layout.MDS
 {
     /// <summary>
     /// Initial layout using PivotMDS method for FastIncrementalLayout

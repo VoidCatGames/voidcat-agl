@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Msagl.DebugHelpers {
+namespace VoidCat.Agl.DebugHelpers {
     internal abstract class CurveStreamElement {
         protected internal object Value;
     }

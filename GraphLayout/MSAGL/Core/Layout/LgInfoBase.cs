@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
     /// <summary>
     /// the base class for LgNodeInfo and LgEdgeInfo
     /// </summary>

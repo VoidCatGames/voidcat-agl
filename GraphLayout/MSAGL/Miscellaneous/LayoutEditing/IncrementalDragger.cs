@@ -3,16 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Layout.LargeGraphLayout;
-using Microsoft.Msagl.Miscellaneous.LayoutEditing;
-using Microsoft.Msagl.Routing;
-using GeomNode = Microsoft.Msagl.Core.Layout.Node;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Layout.LargeGraphLayout;
+using VoidCat.Agl.Miscellaneous.LayoutEditing;
+using VoidCat.Agl.Routing;
+using GeomNode = VoidCat.Agl.Core.Layout.Node;
 
-namespace Microsoft.Msagl.Miscellaneous.LayoutEditing
+namespace VoidCat.Agl.Miscellaneous.LayoutEditing
 {
     /// <summary>
     /// 

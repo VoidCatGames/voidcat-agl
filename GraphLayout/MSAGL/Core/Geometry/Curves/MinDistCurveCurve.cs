@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     //For curves A(s) and B(t) with some guess for the parameters (s0, t0) we 
     //are trying to bring to (0,0) the vector(Fs,Ft).
     //where F(s,t) = (A(s) - B(t))^2.  To minimize F^2,

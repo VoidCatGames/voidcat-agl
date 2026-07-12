@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 
-namespace Microsoft.Msagl.Core.GraphAlgorithms {
+namespace VoidCat.Agl.Core.GraphAlgorithms {
     internal class CycleRemovalWithConstraints<TEdge> where TEdge : IEdge {
         BasicGraphOnEdges<TEdge> graph;
         BasicGraphOnEdges<IntPair> graphOfConstraints;

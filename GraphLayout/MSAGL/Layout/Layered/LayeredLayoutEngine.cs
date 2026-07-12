@@ -1,21 +1,21 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.Rectilinear;
-using Microsoft.Msagl.Routing.Spline.Bundling;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.Rectilinear;
+using VoidCat.Agl.Routing.Spline.Bundling;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// This is the top level class driving the calculation
     /// </summary>

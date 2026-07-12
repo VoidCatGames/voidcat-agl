@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     /// <summary>
     /// Represents a node containing a parallelogram.
     /// Is used in curve intersections routines.

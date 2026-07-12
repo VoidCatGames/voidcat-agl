@@ -1,14 +1,14 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 using System.Diagnostics;
 using System;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Routing.Spline.Bundling {
+namespace VoidCat.Agl.Routing.Spline.Bundling {
     internal class BundleInfo {
         const double FeasibleWidthEpsilon = 0.1; //??
 

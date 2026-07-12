@@ -1,8 +1,8 @@
 using System;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry.Curves;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Microsoft.Msagl.DebugHelpers {
+namespace VoidCat.Agl.DebugHelpers {
     ///<summary>
     ///</summary>
     [Serializable]

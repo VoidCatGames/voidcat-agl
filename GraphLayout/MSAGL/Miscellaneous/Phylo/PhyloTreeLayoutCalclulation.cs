@@ -2,14 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Layout.Layered;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Layout.Layered;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
 
-namespace Microsoft.Msagl.Prototype.Phylo {
+namespace VoidCat.Agl.Prototype.Phylo {
     internal class PhyloTreeLayoutCalclulation : AlgorithmBase{
         Anchor[] anchors;
         ProperLayeredGraph properLayeredGraph;

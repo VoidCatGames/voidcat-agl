@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core;
 
-namespace Microsoft.Msagl.Layout.Incremental
+namespace VoidCat.Agl.Layout.Incremental
 {
     /// <summary>
     /// 

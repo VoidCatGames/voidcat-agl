@@ -1,7 +1,7 @@
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing {
+namespace VoidCat.Agl.Routing {
     internal class RelaxedPolylinePoint  {
         private PolylinePoint polylinePoint;
 

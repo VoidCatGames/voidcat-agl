@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Layered
+namespace VoidCat.Agl.Layout.Layered
 {
 
   

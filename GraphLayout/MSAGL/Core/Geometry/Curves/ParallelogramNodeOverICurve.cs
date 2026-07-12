@@ -1,11 +1,11 @@
-﻿// //﻿#region Using directives
+// //﻿#region Using directives
 
 using System;
 using System.Collections.Generic;
 
 //#endregion
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
 
     /// <summary>
     /// Serves to hold a Parallelogram and a ICurve,

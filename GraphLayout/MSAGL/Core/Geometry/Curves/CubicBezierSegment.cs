@@ -4,12 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.DebugHelpers;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.DebugHelpers;
 //#endregion
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     /// <summary>
     /// Cubic Bezier Segment
     /// </summary>

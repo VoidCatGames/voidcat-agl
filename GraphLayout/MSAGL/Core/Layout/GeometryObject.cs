@@ -1,8 +1,8 @@
 using System;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
 
-namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
     /// <summary>
     /// The base class of the Graph,Node and Edge classes
     /// </summary>

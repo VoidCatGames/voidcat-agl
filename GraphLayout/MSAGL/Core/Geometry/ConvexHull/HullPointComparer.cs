@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     internal class HullPointComparer:IComparer<HullPoint> {
         Point pivot;
       

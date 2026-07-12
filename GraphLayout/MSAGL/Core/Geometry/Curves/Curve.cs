@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
 #pragma warning disable 1587
     /// <summary>
     /// Curve: keeps a sequence of connected ICurves

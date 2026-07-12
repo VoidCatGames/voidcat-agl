@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
     /// <summary>
     ///     Keeps the curve of the edge and arrowhead positions
     /// </summary>

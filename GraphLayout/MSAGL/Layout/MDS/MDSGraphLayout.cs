@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval;
-using Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Layout.ProximityOverlapRemoval;
+using VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
 using System.Threading.Tasks;
 
-namespace Microsoft.Msagl.Layout.MDS {
+namespace VoidCat.Agl.Layout.MDS {
     /// <summary>
     /// Class for graph layout with multidimensional scaling.
     /// </summary>

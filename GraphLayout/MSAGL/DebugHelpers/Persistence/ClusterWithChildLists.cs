@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.DebugHelpers {
+namespace VoidCat.Agl.DebugHelpers {
     /// <summary>
     /// this class is needed for temporarily holding the list of integers representing cluster childs,
     /// and the list of node Id's representing cluster child nodes

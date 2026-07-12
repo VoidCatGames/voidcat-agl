@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
     /// <summary>
     /// A real functionf defined on
     /// the integers 0, 1, . . . , n-1 is said to be unimodal if there exists an integer m such that f is strictly increasing (respectively, decreasing) on [ 0, m] and

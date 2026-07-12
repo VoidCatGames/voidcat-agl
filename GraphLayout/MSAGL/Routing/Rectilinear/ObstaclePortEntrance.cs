@@ -8,11 +8,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     /// <summary>
     /// An ObstaclePortEntrance is a single edge entering or leaving an obstacle in one of the NSEW Compass directions.
     /// </summary>

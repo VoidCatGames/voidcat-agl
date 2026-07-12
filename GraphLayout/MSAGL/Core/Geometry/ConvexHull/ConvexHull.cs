@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Routing;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Routing;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     /// <summary>
     /// Creates the convex hull of a set of points following "Computational Geometry, second edition" of O'Rourke
     /// </summary>

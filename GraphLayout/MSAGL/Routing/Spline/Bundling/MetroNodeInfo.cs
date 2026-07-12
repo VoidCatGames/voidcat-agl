@@ -1,6 +1,6 @@
-﻿using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Spline.Bundling {
+namespace VoidCat.Agl.Routing.Spline.Bundling {
     internal class MetroNodeInfo {
         Metroline metroline;
         Station station;

@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.GraphAlgorithms;
 
-namespace Microsoft.Msagl.Core.ProjectionSolver{
+namespace VoidCat.Agl.Core.ProjectionSolver{
     internal class UniformOneDimensionalSolver {
         readonly Dictionary<int, double> idealPositions = new Dictionary<int, double>();
         readonly double varSepartion;

@@ -1,6 +1,6 @@
-using Microsoft.Msagl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.GraphAlgorithms;
 
-namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
     internal class SimpleIntEdge : IEdge
     {
         public int Source { get; set; }

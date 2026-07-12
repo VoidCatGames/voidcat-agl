@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Routing
+namespace VoidCat.Agl.Routing
 {
     /// <summary>
     /// Basic edge router for producing straight edges.
@@ -223,7 +223,7 @@ namespace Microsoft.Msagl.Routing
             
         }
 
-        [SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "Microsoft.Msagl.Core.Geometry.Site")]
+        [SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "VoidCat.Agl.Core.Geometry.Site")]
         internal static SmoothedPolyline CreateUnderlyingPolylineForSelfEdge(Point p0, double dx, double dy)
         {
             var p1 = p0 + new Point(0, dy);
@@ -241,7 +241,7 @@ namespace Microsoft.Msagl.Routing
             return polyline;
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "Microsoft.Msagl.Site")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "VoidCat.Agl.Site")]
         static internal void SetStraightLineEdgesWithUnderlyingPolylines(GeometryGraph graph) {
             SplineRouter.CreatePortsIfNeeded(graph.Edges);
             foreach (Edge edge in graph.Edges) 

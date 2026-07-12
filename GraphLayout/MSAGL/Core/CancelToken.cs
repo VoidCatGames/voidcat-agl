@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 #endif
 
-namespace Microsoft.Msagl.Core {
+namespace VoidCat.Agl.Core {
 
     /// <summary>
     /// a place holder for the cancelled flag

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.Core;
 
-namespace Microsoft.Msagl.Routing.Rectilinear{
+namespace VoidCat.Agl.Routing.Rectilinear{
     ///<summary>
     ///</summary>
     public static class RectilinearInteractiveEditor {
@@ -181,7 +181,7 @@ namespace Microsoft.Msagl.Routing.Rectilinear{
                 Arrowheads.CreateBigEnoughSpline(edge);
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "Microsoft.Msagl.Core.Geometry.Site")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "VoidCat.Agl.Core.Geometry.Site")]
         static SmoothedPolyline CreateUnderlyingPolylineForSelfEdge(Point p0, double dx, double dy)
         {
             var p1 = p0 + new Point(0, dy);

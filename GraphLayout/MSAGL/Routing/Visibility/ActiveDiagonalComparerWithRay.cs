@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core;
 
-namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
       internal class ActiveDiagonalComparerWithRay: IComparer<Diagonal> {
 
           Point pointOnTheRay;

@@ -7,11 +7,11 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     internal class SegmentIntersector : IComparer<SegmentIntersector.SegEvent>, IComparer<ScanSegment> {
         // The event types.  We sweep vertically, with a horizontal scanline, so the vertical
         // segments that are active and have X coords within the current vertical segment's

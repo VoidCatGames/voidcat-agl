@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Core
+namespace VoidCat.Agl.Core
 {
 #if PARALLEL_SUPPORTED
     /// <summary>

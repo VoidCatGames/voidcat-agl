@@ -5,11 +5,11 @@
 // Copyright Microsoft Corporation.
 
 using System.Diagnostics;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.Spline.ConeSpanner;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.Spline.ConeSpanner;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     // Scan direction is parallel to the sweepline which moves in the perpendicular direction;
     // i.e. scan direction is "sideways" along the sweepline.  We also have lookahead scans
     // that enqueue events along the scan-primary coordinate (in the direction of the scan, i.e.

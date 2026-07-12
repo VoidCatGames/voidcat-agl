@@ -1,6 +1,6 @@
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
     internal abstract class SegmentBase {
         abstract internal Point Start { get; }
         abstract internal Point End { get; }

@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.GraphmapsWithMesh
+namespace VoidCat.Agl.GraphmapsWithMesh
 {
 
     public class Tiling
@@ -14,8 +14,8 @@ namespace Microsoft.Msagl.GraphmapsWithMesh
         public int NumOfnodesBeforeDetour;
         public int maxTheoreticalZoomLevel;
 
-        public Dictionary<Microsoft.Msagl.Core.Layout.Edge, List<int>> pathList = new Dictionary<Microsoft.Msagl.Core.Layout.Edge, List<int>>();
-        public Dictionary<int, List<Microsoft.Msagl.Core.Layout.Edge>> JunctionToEdgeList = new Dictionary<int, List<Microsoft.Msagl.Core.Layout.Edge>>();
+        public Dictionary<VoidCat.Agl.Core.Layout.Edge, List<int>> pathList = new Dictionary<VoidCat.Agl.Core.Layout.Edge, List<int>>();
+        public Dictionary<int, List<VoidCat.Agl.Core.Layout.Edge>> JunctionToEdgeList = new Dictionary<int, List<VoidCat.Agl.Core.Layout.Edge>>();
         public Dictionary<Node, Point> nodeToLoc = new Dictionary<Node, Point>();
 
 
@@ -269,9 +269,9 @@ namespace Microsoft.Msagl.GraphmapsWithMesh
             for (int index = N; index < NumOfnodesBeforeDetour; index++)
             {
                 Vertex w = VList[index];
-                var p1 = new Microsoft.Msagl.Core.Geometry.Point(w.XLoc - 15, w.YLoc - 15);
-                var p2 = new Microsoft.Msagl.Core.Geometry.Point(w.XLoc + 15, w.YLoc + 15);
-                Microsoft.Msagl.Core.Geometry.Rectangle queryRectangle = new Microsoft.Msagl.Core.Geometry.Rectangle(
+                var p1 = new VoidCat.Agl.Core.Geometry.Point(w.XLoc - 15, w.YLoc - 15);
+                var p2 = new VoidCat.Agl.Core.Geometry.Point(w.XLoc + 15, w.YLoc + 15);
+                VoidCat.Agl.Core.Geometry.Rectangle queryRectangle = new VoidCat.Agl.Core.Geometry.Rectangle(
                     p1, p2);
                 int[] candidateList = nodeTree.GetAllIntersecting(queryRectangle);
                 allcandidates.Add(index, candidateList);
@@ -394,17 +394,17 @@ namespace Microsoft.Msagl.GraphmapsWithMesh
                 for (int j = 0; j < DegList[i]; j++)
                 {
                     int k1 = EList[i, j].NodeId;
-                    Microsoft.Msagl.Core.Geometry.Point a = new Microsoft.Msagl.Core.Geometry.Point(VList[i].XLoc, VList[i].YLoc);
-                    Microsoft.Msagl.Core.Geometry.Point b = new Microsoft.Msagl.Core.Geometry.Point(VList[k1].XLoc, VList[k1].YLoc);
+                    VoidCat.Agl.Core.Geometry.Point a = new VoidCat.Agl.Core.Geometry.Point(VList[i].XLoc, VList[i].YLoc);
+                    VoidCat.Agl.Core.Geometry.Point b = new VoidCat.Agl.Core.Geometry.Point(VList[k1].XLoc, VList[k1].YLoc);
                     for (int l = 0; l < DegList[w.Id]; l++)
                     {
                         int k2 = EList[w.Id, l].NodeId;
-                        Microsoft.Msagl.Core.Geometry.Point c = new Microsoft.Msagl.Core.Geometry.Point(w.XLoc, w.YLoc);
-                        Microsoft.Msagl.Core.Geometry.Point d = new Microsoft.Msagl.Core.Geometry.Point(VList[k2].XLoc, VList[k2].YLoc);
+                        VoidCat.Agl.Core.Geometry.Point c = new VoidCat.Agl.Core.Geometry.Point(w.XLoc, w.YLoc);
+                        VoidCat.Agl.Core.Geometry.Point d = new VoidCat.Agl.Core.Geometry.Point(VList[k2].XLoc, VList[k2].YLoc);
 
                         if (w.Id == i || k2 == i || w.Id == k1 || k2 == k1) continue;
-                        Microsoft.Msagl.Core.Geometry.Point intersectionPoint;
-                        if (Microsoft.Msagl.Core.Geometry.Point.SegmentSegmentIntersection(a, b, c, d, out intersectionPoint))
+                        VoidCat.Agl.Core.Geometry.Point intersectionPoint;
+                        if (VoidCat.Agl.Core.Geometry.Point.SegmentSegmentIntersection(a, b, c, d, out intersectionPoint))
                             return false;
 
                     }
@@ -420,17 +420,17 @@ namespace Microsoft.Msagl.GraphmapsWithMesh
                 for (int j = 0; j < DegList[i]; j++)
                 {
                     int k1 = EList[i, j].NodeId;
-                    Microsoft.Msagl.Core.Geometry.Point a = new Microsoft.Msagl.Core.Geometry.Point(VList[i].XLoc, VList[i].YLoc);
-                    Microsoft.Msagl.Core.Geometry.Point b = new Microsoft.Msagl.Core.Geometry.Point(VList[k1].XLoc, VList[k1].YLoc);
+                    VoidCat.Agl.Core.Geometry.Point a = new VoidCat.Agl.Core.Geometry.Point(VList[i].XLoc, VList[i].YLoc);
+                    VoidCat.Agl.Core.Geometry.Point b = new VoidCat.Agl.Core.Geometry.Point(VList[k1].XLoc, VList[k1].YLoc);
                     for (int l = 0; l < DegList[w.Id]; l++)
                     {
                         int k2 = EList[w.Id, l].NodeId;
-                        Microsoft.Msagl.Core.Geometry.Point c = new Microsoft.Msagl.Core.Geometry.Point(w.XLoc, w.YLoc);
-                        Microsoft.Msagl.Core.Geometry.Point d = new Microsoft.Msagl.Core.Geometry.Point(VList[k2].XLoc, VList[k2].YLoc);
+                        VoidCat.Agl.Core.Geometry.Point c = new VoidCat.Agl.Core.Geometry.Point(w.XLoc, w.YLoc);
+                        VoidCat.Agl.Core.Geometry.Point d = new VoidCat.Agl.Core.Geometry.Point(VList[k2].XLoc, VList[k2].YLoc);
 
                         if (w.Id == i || k2 == i || w.Id == k1 || k2 == k1) continue;
-                        Microsoft.Msagl.Core.Geometry.Point intersectionPoint;
-                        if (Microsoft.Msagl.Core.Geometry.Point.SegmentSegmentIntersection(a, b, c, d, out intersectionPoint))
+                        VoidCat.Agl.Core.Geometry.Point intersectionPoint;
+                        if (VoidCat.Agl.Core.Geometry.Point.SegmentSegmentIntersection(a, b, c, d, out intersectionPoint))
                             return false;
 
                     }
@@ -441,8 +441,8 @@ namespace Microsoft.Msagl.GraphmapsWithMesh
 
         public bool noCrossings(Vertex w, Vertex w1, Vertex w2)
         {
-            Microsoft.Msagl.Core.Geometry.Point c = new Microsoft.Msagl.Core.Geometry.Point(w1.XLoc, w1.YLoc);
-            Microsoft.Msagl.Core.Geometry.Point d = new Microsoft.Msagl.Core.Geometry.Point(w2.XLoc, w2.YLoc);
+            VoidCat.Agl.Core.Geometry.Point c = new VoidCat.Agl.Core.Geometry.Point(w1.XLoc, w1.YLoc);
+            VoidCat.Agl.Core.Geometry.Point d = new VoidCat.Agl.Core.Geometry.Point(w2.XLoc, w2.YLoc);
 
 
             int minx, miny, maxx, maxy;
@@ -471,13 +471,13 @@ namespace Microsoft.Msagl.GraphmapsWithMesh
                     if (w1.Id == k1 || w2.Id == k1) continue;
 
 
-                    Microsoft.Msagl.Core.Geometry.Point a = new Microsoft.Msagl.Core.Geometry.Point(VList[i].XLoc, VList[i].YLoc);
-                    Microsoft.Msagl.Core.Geometry.Point b = new Microsoft.Msagl.Core.Geometry.Point(VList[k1].XLoc, VList[k1].YLoc);
+                    VoidCat.Agl.Core.Geometry.Point a = new VoidCat.Agl.Core.Geometry.Point(VList[i].XLoc, VList[i].YLoc);
+                    VoidCat.Agl.Core.Geometry.Point b = new VoidCat.Agl.Core.Geometry.Point(VList[k1].XLoc, VList[k1].YLoc);
 
 
-                    Microsoft.Msagl.Core.Geometry.Point interestionPoint;
+                    VoidCat.Agl.Core.Geometry.Point interestionPoint;
 
-                    if (Microsoft.Msagl.Core.Geometry.Point.SegmentSegmentIntersection(a, b, c, d, out interestionPoint))
+                    if (VoidCat.Agl.Core.Geometry.Point.SegmentSegmentIntersection(a, b, c, d, out interestionPoint))
                         return false;
 
                 }
@@ -587,8 +587,8 @@ namespace Microsoft.Msagl.GraphmapsWithMesh
                 double min_Y = Math.Min(w.YLoc, VList[listNeighbors[i, 1]].YLoc) - offset;
                 double Max_X = Math.Max(w.XLoc, VList[listNeighbors[i, 1]].XLoc) + offset;
                 double Max_Y = Math.Max(w.YLoc, VList[listNeighbors[i, 1]].YLoc) + offset;
-                Microsoft.Msagl.Core.Geometry.Point a = new Microsoft.Msagl.Core.Geometry.Point(min_X, min_Y);
-                Microsoft.Msagl.Core.Geometry.Point b = new Microsoft.Msagl.Core.Geometry.Point(Max_X, Max_Y);
+                VoidCat.Agl.Core.Geometry.Point a = new VoidCat.Agl.Core.Geometry.Point(min_X, min_Y);
+                VoidCat.Agl.Core.Geometry.Point b = new VoidCat.Agl.Core.Geometry.Point(Max_X, Max_Y);
 
                 Rectangle queryRectangle = new Rectangle(a, b);
 
@@ -1398,8 +1398,8 @@ namespace Microsoft.Msagl.GraphmapsWithMesh
         }
         public int GetNodeExceptTheGivenNode(Vertex w, int a, int b, int offset)
         {
-            Microsoft.Msagl.Core.Geometry.Point p1 = new Microsoft.Msagl.Core.Geometry.Point(a - offset, b - offset);
-            Microsoft.Msagl.Core.Geometry.Point p2 = new Microsoft.Msagl.Core.Geometry.Point(a + offset, b + offset);
+            VoidCat.Agl.Core.Geometry.Point p1 = new VoidCat.Agl.Core.Geometry.Point(a - offset, b - offset);
+            VoidCat.Agl.Core.Geometry.Point p2 = new VoidCat.Agl.Core.Geometry.Point(a + offset, b + offset);
             Rectangle queryRectangle = new Rectangle(p1, p2);
             int[] candidateList = nodeTree.GetAllIntersecting(queryRectangle);
             for (int index = 0; index < candidateList.Length; index++)

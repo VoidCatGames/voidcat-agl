@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.ProjectionSolver;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.ProjectionSolver;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     internal class ConstrainedOrdering {
         readonly GeometryGraph geometryGraph;
         readonly BasicGraph<Node, PolyIntEdge> intGraph;

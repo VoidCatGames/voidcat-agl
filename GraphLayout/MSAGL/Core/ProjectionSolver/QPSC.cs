@@ -14,7 +14,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Core.ProjectionSolver
+namespace VoidCat.Agl.Core.ProjectionSolver
 {
     // An instance of Qpsc drives the gradient-projection portion of the Projection Solver.
     internal class Qpsc

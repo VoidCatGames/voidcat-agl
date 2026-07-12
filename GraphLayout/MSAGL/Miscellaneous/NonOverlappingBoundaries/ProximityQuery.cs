@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Prototype.NonOverlappingBoundaries {
+namespace VoidCat.Agl.Prototype.NonOverlappingBoundaries {
     /// <summary>
     /// An IHull is used for proximity queries and should implement the Project method which (similar to IConstraint)
     /// should remove overlap between two hulls by moving them as little as possible

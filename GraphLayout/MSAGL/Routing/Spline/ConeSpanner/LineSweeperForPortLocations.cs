@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Routing.Visibility;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.DebugHelpers.Persistence;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Routing.Visibility;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.DebugHelpers.Persistence;
 
 
-namespace Microsoft.Msagl.Routing.Spline.ConeSpanner {
+namespace VoidCat.Agl.Routing.Spline.ConeSpanner {
     /// <summary>
     /// Sweeps a given direction of cones and adds discovered edges to the graph.
     /// The cones can only start at ports here.

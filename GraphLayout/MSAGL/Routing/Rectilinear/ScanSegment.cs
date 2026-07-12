@@ -8,11 +8,11 @@ using System;
 using System.Diagnostics;
 using System.Linq;
 
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     internal class ScanSegment : SegmentBase {
         // This is a single segment added by the ScanLine.
         internal PointAndCrossingsList GroupBoundaryPointAndCrossingsList;

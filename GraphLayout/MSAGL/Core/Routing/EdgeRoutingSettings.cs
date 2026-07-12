@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.ComponentModel;
-using Microsoft.Msagl.Routing.Spline.Bundling;
+using VoidCat.Agl.Routing.Spline.Bundling;
 
-namespace Microsoft.Msagl.Core.Routing {
+namespace VoidCat.Agl.Core.Routing {
     ///<summary>
     /// defines egde routing behaviour
     ///</summary>

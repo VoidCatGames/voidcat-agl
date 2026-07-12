@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     /// <summary>
     /// Class that provides methods for doing approximate comparisons.
     /// </summary>

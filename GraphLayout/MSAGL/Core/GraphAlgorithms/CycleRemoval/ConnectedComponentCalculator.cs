@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.GraphAlgorithms {
+namespace VoidCat.Agl.Core.GraphAlgorithms {
 
    
     static internal class ConnectedComponentCalculator<TEdge> where TEdge:IEdge {

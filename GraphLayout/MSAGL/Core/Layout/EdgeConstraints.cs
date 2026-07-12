@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Core.Layout
+namespace VoidCat.Agl.Core.Layout
 {
     /// <summary>
     /// Settings controlling how ideal edge lengths will be calculated for layouts that consider it.

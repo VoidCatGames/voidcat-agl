@@ -1,4 +1,4 @@
-namespace Microsoft.Msagl.Miscellaneous.LayoutEditing {
+namespace VoidCat.Agl.Miscellaneous.LayoutEditing {
     /// <summary>
     /// this class charachterizes how a label is attached to its edge
     /// </summary>

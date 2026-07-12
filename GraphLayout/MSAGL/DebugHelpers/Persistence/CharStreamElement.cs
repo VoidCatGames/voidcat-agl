@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Msagl.DebugHelpers.Persistence {
+namespace VoidCat.Agl.DebugHelpers.Persistence {
     internal class CharStreamElement : CurveStreamElement {
         internal CharStreamElement(char ch) {
             Value = ch;

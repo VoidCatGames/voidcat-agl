@@ -5,9 +5,9 @@
 // Copyright Microsoft Corporation.
 
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     // A Group is a Shape that has children.
     // This class defines a single crossing of a group boundary, from a point on the group boundary.
     // It is intended as the Value of a GroupBoundaryCrossingMap entry, or as an element in a VisiblityEdge.GroupCrossings

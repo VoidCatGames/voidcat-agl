@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.LargeGraphLayout {
+namespace VoidCat.Agl.Layout.LargeGraphLayout {
     internal class SimpleNodeCollection : IList<Node> {
         List<Node> nodes;
 

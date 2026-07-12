@@ -6,11 +6,11 @@
 
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Routing.Spline.ConeSpanner;
-using RectRout = Microsoft.Msagl.Routing.Rectilinear;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Routing.Spline.ConeSpanner;
+using RectRout = VoidCat.Agl.Routing.Rectilinear;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     using DebugHelpers;
 
     /// <summary>

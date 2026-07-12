@@ -1,10 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Routing {
+namespace VoidCat.Agl.Routing {
     /// <summary>
     /// written in assumption of a single parent
     /// </summary>

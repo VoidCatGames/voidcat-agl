@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.Layout.Incremental;
-using Microsoft.Msagl.Layout.Layered;
-using Microsoft.Msagl.Layout.MDS;
-using Microsoft.Msagl.Miscellaneous;
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.Rectilinear;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.Layout.Incremental;
+using VoidCat.Agl.Layout.Layered;
+using VoidCat.Agl.Layout.MDS;
+using VoidCat.Agl.Miscellaneous;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.Rectilinear;
 using System.Threading.Tasks;
-using Microsoft.Msagl.DebugHelpers;
+using VoidCat.Agl.DebugHelpers;
 
-namespace Microsoft.Msagl.Layout.Initial {
+namespace VoidCat.Agl.Layout.Initial {
     /// <summary>
     /// todo: 
     /// find a way to compact disconnected components - incremental packing?
@@ -271,7 +271,7 @@ namespace Microsoft.Msagl.Layout.Initial {
             {
                 return;
             }
-            Microsoft.Msagl.GraphViewerGdi.DisplayGeometryGraph.SetShowFunctions();
+            VoidCat.Agl.GraphViewerGdi.DisplayGeometryGraph.SetShowFunctions();
             //FixNullCurveEdges(graph.Edges);
             var debugCurves = graph.Nodes.Select(n => n.BoundaryCurve).Select(c => new DebugCurve("red", c));
             debugCurves = debugCurves.Concat(graph.RootCluster.AllClustersDepthFirst().Select(c => c.BoundaryCurve).Select(c => new DebugCurve("green", c)));

@@ -1,4 +1,4 @@
-﻿//
+//
 // ScanSegmentVectorItem.cs
 // MSAGL base class to create the visibility graph consisting of nlogn ScanSegment intersections for Rectilinear Edge Routing.
 //
@@ -7,9 +7,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     internal partial class SparseVisibilityGraphGenerator {
         /// <summary>
         /// This forms one slot in the scan segment vector.

@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Microsoft.Msagl.Core.ProjectionSolver
+namespace VoidCat.Agl.Core.ProjectionSolver
 {
     /// <summary>
     /// The algorithm used by the ProjectionSolver.

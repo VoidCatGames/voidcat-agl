@@ -1,6 +1,6 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 
-namespace Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation {
+namespace VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation {
     internal class CdtFrontElement {
         //The LeftSite should coincide with the leftmost end of the Edge, and the edge should not be vertical
 

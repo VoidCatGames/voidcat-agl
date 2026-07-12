@@ -7,9 +7,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     /// <summary>
     /// This stores the location and type of a Port.
     /// </summary>

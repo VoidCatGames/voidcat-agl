@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     /// <summary>
     /// Line segment
     /// </summary>

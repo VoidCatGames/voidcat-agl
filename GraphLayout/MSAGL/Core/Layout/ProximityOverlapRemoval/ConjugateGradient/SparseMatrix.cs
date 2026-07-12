@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient {
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient {
     // 
     /// <summary>
     /// Matrix in compressed sparse row format (CSR) 

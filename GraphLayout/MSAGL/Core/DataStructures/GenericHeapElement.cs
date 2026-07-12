@@ -1,4 +1,4 @@
-namespace Microsoft.Msagl.Core.DataStructures {
+namespace VoidCat.Agl.Core.DataStructures {
     class GenericHeapElement<T> {
         internal int indexToA;
         internal double priority;

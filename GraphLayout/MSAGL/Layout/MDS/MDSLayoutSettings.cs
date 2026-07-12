@@ -1,8 +1,8 @@
 using System.ComponentModel;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
 
-namespace Microsoft.Msagl.Layout.MDS
+namespace VoidCat.Agl.Layout.MDS
 {
     /// <summary>
     /// MDL layout settings

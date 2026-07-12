@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 
-namespace Microsoft.Msagl.DebugHelpers{
+namespace VoidCat.Agl.DebugHelpers{
     /// <summary>
     /// 
     /// </summary>

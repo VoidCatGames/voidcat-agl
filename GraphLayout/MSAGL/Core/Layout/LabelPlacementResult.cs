@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
     /// <summary>
     /// The possible possible results of a label placement.
     /// OverlapsOtherLabels is the worst result, while OverlapsNothing is the best result.

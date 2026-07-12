@@ -7,9 +7,9 @@
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     // A Group is a Shape that has children.
     // This class maps between intersection points on Group boundaries and the groups and crossing
     // directions at those intersection points.

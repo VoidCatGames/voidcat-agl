@@ -1,7 +1,7 @@
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Incremental {
+namespace VoidCat.Agl.Layout.Incremental {
     /// <summary>
     /// A MinSeparationConstraint requires a minimum distance between two nodes, i.e. if nodes are closer than
     /// the minimum separation they will be projected apart, if they are further apart than the minimum

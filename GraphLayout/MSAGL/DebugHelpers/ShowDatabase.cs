@@ -1,7 +1,7 @@
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Layout.Layered;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Layout.Layered;
 
-namespace Microsoft.Msagl.DebugHelpers {
+namespace VoidCat.Agl.DebugHelpers {
     /// <summary>
     /// 
     /// </summary>

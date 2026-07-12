@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using Microsoft.Msagl.Core.Layout;
+using System.Collections.Generic;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.LargeGraphLayout {
+namespace VoidCat.Agl.Layout.LargeGraphLayout {
     internal interface IZoomLevelCalculator {
         /// <summary>
         /// returns the top node

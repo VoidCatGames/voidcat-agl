@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Msagl.Routing.Spline.Bundling {
+namespace VoidCat.Agl.Routing.Spline.Bundling {
     ///<summary>
     ///</summary>
     public enum BundlingStatus {

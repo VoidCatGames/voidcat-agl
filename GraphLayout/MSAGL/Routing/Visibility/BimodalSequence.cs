@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
     /// <summary>
     /// For our purposes, it suffices to define a bimodal function as
     /// one for which there is an r in [ 0, n-1] such that f(r), f(r + I), . . . , f(n), f( l), . . . ,

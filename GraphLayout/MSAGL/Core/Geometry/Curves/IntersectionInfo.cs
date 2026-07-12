@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     /// <summary>
     /// Contains the result of the intersection of two ICurves.
     /// </summary>

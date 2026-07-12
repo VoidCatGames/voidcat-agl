@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Microsoft.Msagl.Core.Layout
+namespace VoidCat.Agl.Core.Layout
 {
     /// <summary>
     /// the packing method to be used by InitialLayoutByCluster

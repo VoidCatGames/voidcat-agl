@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.DebugHelpers;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.DebugHelpers;
 
-namespace Microsoft.Msagl.Core.GraphAlgorithms {
+namespace VoidCat.Agl.Core.GraphAlgorithms {
     /// <summary>
     /// 
     /// </summary>

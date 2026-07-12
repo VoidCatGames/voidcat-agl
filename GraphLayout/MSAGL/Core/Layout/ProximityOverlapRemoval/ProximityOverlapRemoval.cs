@@ -1,19 +1,19 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.StressEnergy;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.DebugHelpers;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.StressEnergy;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.DebugHelpers;
 
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation;
-using Point = Microsoft.Msagl.Core.Geometry.Point;
-using Rectangle = Microsoft.Msagl.Core.Geometry.Rectangle;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation;
+using Point = VoidCat.Agl.Core.Geometry.Point;
+using Rectangle = VoidCat.Agl.Core.Geometry.Rectangle;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval {
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval {
     /// <summary>
     ///  Proximity Stress Model as suggested by Gansner et. al, Fast Node Overlap Removal.
     /// </summary>

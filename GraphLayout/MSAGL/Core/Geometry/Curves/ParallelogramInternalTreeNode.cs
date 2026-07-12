@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace Microsoft.Msagl.Core.Geometry.Curves
+namespace VoidCat.Agl.Core.Geometry.Curves
 {
 
     /// <summary>

@@ -9,7 +9,7 @@
 
 using System;
 
-namespace Microsoft.Msagl.Core.ProjectionSolver
+namespace VoidCat.Agl.Core.ProjectionSolver
 {
     /// <summary>
     /// Per-instance results from ProjectionSolver.Solver.Solve().

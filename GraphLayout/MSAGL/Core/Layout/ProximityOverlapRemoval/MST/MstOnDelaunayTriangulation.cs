@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree
 {
     /// <summary>
     /// Computes the minimum spanning tree on a triangulation or on a set of edges given by a list of tuple.

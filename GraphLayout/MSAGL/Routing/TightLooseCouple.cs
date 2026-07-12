@@ -1,7 +1,7 @@
-﻿using System;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using System;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing {
+namespace VoidCat.Agl.Routing {
     /// <summary>
     /// an utility class to keep different polylines created around a shape
     /// </summary>

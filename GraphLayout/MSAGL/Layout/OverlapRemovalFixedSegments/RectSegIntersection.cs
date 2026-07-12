@@ -1,10 +1,10 @@
-﻿using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using SymmetricSegment = Microsoft.Msagl.Core.DataStructures.SymmetricTuple<Microsoft.Msagl.Core.Geometry.Point>;
-namespace Microsoft.Msagl.Layout.OverlapRemovalFixedSegments
+using VoidCat.Agl.Core.Geometry.Curves;
+using SymmetricSegment = VoidCat.Agl.Core.DataStructures.SymmetricTuple<VoidCat.Agl.Core.Geometry.Point>;
+namespace VoidCat.Agl.Layout.OverlapRemovalFixedSegments
 {
     public class RectSegIntersection
     {

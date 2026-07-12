@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 
-namespace Microsoft.Msagl.Core.GraphAlgorithms {
+namespace VoidCat.Agl.Core.GraphAlgorithms {
     internal class NodeInfo {
         Set<int> outEdges = new Set<int>();
 

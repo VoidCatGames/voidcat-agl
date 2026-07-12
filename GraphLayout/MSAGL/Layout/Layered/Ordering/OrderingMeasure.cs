@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     
     internal class OrderingMeasure {
         int numberOfCrossings;

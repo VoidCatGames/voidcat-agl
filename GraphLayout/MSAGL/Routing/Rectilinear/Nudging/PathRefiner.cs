@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Rectilinear.Nudging {
+namespace VoidCat.Agl.Routing.Rectilinear.Nudging {
     /// <summary>
     /// If two paths intersect then insert the intersection point as a vertex into both paths.
     /// Remove path self loops. Merge paths between the crossings if they have multiple crossings.

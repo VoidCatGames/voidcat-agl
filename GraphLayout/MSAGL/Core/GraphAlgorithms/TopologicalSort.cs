@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Microsoft.Msagl.Core.GraphAlgorithms{
+namespace VoidCat.Agl.Core.GraphAlgorithms{
     /// <summary>
     /// Implements the topological sort
     /// </summary>

@@ -1,17 +1,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.Routing.Visibility;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.Routing.Visibility;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation;
 using System;
 
-namespace Microsoft.Msagl.Routing.Spline.Bundling {
+namespace VoidCat.Agl.Routing.Spline.Bundling {
     /// <summary>
     /// Calculates the cost of the routing
     /// </summary>

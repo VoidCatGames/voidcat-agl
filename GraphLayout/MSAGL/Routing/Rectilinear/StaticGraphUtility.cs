@@ -7,15 +7,15 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.DebugHelpers; // TEST_MSAGL
-using Microsoft.Msagl.Routing.Rectilinear.Nudging;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.DebugHelpers; // TEST_MSAGL
+using VoidCat.Agl.Routing.Rectilinear.Nudging;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     // Static utilities for the visibility graph.
     internal static class StaticGraphUtility {
         // Determine the direction of an edge.

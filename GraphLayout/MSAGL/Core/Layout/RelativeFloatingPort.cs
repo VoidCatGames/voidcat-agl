@@ -1,8 +1,8 @@
 using System;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
     /// <summary>
     /// A FloatingPort that has an associated Node, which is where we take the Curve,
     /// and we calculate the Location based on an offset from the Center of the RelativeTo node.

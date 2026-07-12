@@ -1,7 +1,7 @@
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     /// <summary>
     /// This vertex class is used in rectilinear shortest paths
     /// </summary>

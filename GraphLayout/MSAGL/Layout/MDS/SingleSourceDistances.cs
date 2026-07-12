@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.MDS {
+namespace VoidCat.Agl.Layout.MDS {
     /// <summary>
     /// Provides functionality for computing distances in a graph.
     /// </summary>
@@ -46,7 +46,7 @@ namespace Microsoft.Msagl.Layout.MDS {
 
             Result = new double[graph.Nodes.Count];
 
-            var q = new Microsoft.Msagl.Core.DataStructures.GenericBinaryHeapPriorityQueue<Node>();
+            var q = new VoidCat.Agl.Core.DataStructures.GenericBinaryHeapPriorityQueue<Node>();
             Dictionary<Node, double> d = new Dictionary<Node, double>();
             foreach (Node node in graph.Nodes) {
                 q.Enqueue(node, Double.PositiveInfinity);

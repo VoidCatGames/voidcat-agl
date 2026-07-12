@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Rectilinear.Nudging {
+namespace VoidCat.Agl.Routing.Rectilinear.Nudging {
     /// <summary>
     /// intersects a set of horizontal LinkedPoints with a set of vertical LinkedPoints
     /// </summary>

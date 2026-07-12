@@ -8,9 +8,9 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System;
-using Microsoft.Msagl.Core.ProjectionSolver;
+using VoidCat.Agl.Core.ProjectionSolver;
 
-namespace Microsoft.Msagl.Core.Geometry
+namespace VoidCat.Agl.Core.Geometry
 {
     /// <summary>
     /// Per-instance parameters for OverlapRemoval.ConstraintGenerator.Generate()/Solve().

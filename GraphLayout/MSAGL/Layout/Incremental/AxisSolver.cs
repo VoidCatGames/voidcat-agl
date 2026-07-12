@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.ProjectionSolver;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.ProjectionSolver;
 
-namespace Microsoft.Msagl.Layout.Incremental {
+namespace VoidCat.Agl.Layout.Incremental {
     /// <summary>
     /// Solver for structural separation constraints or non-overlap constraints in a single axis.
     /// Wrapper round all the ProjectionSolver stuff.
@@ -398,4 +398,4 @@ namespace Microsoft.Msagl.Layout.Incremental {
             Debug.Assert(!rect1.Intersects(rect2));
         }
     } // end class AxisSolver
-} // end namespace Microsoft.Msagl.Incremental
+} // end namespace VoidCat.Agl.Incremental

@@ -1,14 +1,14 @@
 using System;
 using System.ComponentModel;
 
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Layout.LargeGraphLayout;
-using Microsoft.Msagl.Routing;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Layout.LargeGraphLayout;
+using VoidCat.Agl.Routing;
 
 
-namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
 
     ///<summary>
     /// controls many properties of the layout algorithm

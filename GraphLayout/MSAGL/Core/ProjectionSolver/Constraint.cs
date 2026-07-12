@@ -13,7 +13,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Core.ProjectionSolver
+namespace VoidCat.Agl.Core.ProjectionSolver
 {
     /// <summary>
     /// A Constraint defines the required minimal separation between two Variables

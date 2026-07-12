@@ -1,7 +1,7 @@
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Rectilinear.Nudging
+namespace VoidCat.Agl.Routing.Rectilinear.Nudging
 {
 #pragma warning disable CS0659 // Type overrides Object.Equals(object o) but does not override Object.GetHashCode()
     internal class SegWithIndex {

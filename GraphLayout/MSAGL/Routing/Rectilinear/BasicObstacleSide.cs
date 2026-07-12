@@ -3,10 +3,10 @@
 // MSAGL base class for ObstacleSides for Rectilinear Edge Routing.
 //
 // Copyright Microsoft Corporation.
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Routing.Spline.ConeSpanner;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Routing.Spline.ConeSpanner;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     /// <summary>
     /// BasicObstacleSide is base class for an obstacle side that is to the low or high end of the
     /// scanline-parallel coordinate, and knows which direction to traverse to find the endVertex.

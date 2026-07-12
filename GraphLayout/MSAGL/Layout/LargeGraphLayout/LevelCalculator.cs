@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.Prototype.Ranking;
-using Microsoft.Msagl.Routing;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.Prototype.Ranking;
+using VoidCat.Agl.Routing;
 
-namespace Microsoft.Msagl.Layout.LargeGraphLayout {
+namespace VoidCat.Agl.Layout.LargeGraphLayout {
     internal class LevelCalculator { 
 
         static void AssignEdges(LgData lgData, IZoomLevelCalculator nodeZoomLevelCalculator) {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 
-namespace Microsoft.Msagl.Core.GraphAlgorithms {
+namespace VoidCat.Agl.Core.GraphAlgorithms {
     /// <summary>
     /// Calculates a set of edges to reverse, so called "feedback set", for obtaining a DAG
     /// </summary>

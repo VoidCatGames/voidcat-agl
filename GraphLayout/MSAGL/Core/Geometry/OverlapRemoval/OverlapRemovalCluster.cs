@@ -13,7 +13,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.ProjectionSolver;
+using VoidCat.Agl.Core.ProjectionSolver;
 
 //
 // How Clusters Work
@@ -59,7 +59,7 @@ using Microsoft.Msagl.Core.ProjectionSolver;
 //
 // This proceeds until we back up to the root cluster of the ClusterHierarchy.
 //
-namespace Microsoft.Msagl.Core.Geometry
+namespace VoidCat.Agl.Core.Geometry
 {
     /// <summary>
     /// A cluster is a structure that acts as a Node for Nodes and Clusters at a sibling level,

@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using System.Collections.Generic;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Spline.Bundling {
+namespace VoidCat.Agl.Routing.Spline.Bundling {
     internal class StationEdgeInfo {
 
         internal int Count {get {return this.Metrolines.Count;} }

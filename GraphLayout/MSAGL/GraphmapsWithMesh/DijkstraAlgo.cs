@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.GraphmapsWithMesh
+namespace VoidCat.Agl.GraphmapsWithMesh
 {
     class DijkstraAlgo
     {

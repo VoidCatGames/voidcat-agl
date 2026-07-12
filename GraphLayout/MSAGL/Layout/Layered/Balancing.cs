@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Graph = Microsoft.Msagl.Core.GraphAlgorithms.BasicGraphOnEdges<Microsoft.Msagl.Layout.Layered.PolyIntEdge>;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using Graph = VoidCat.Agl.Core.GraphAlgorithms.BasicGraphOnEdges<VoidCat.Agl.Layout.Layered.PolyIntEdge>;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// balances the layers by moving vertices with
     /// the same number of input-output edges to feasible layers with fewer nodes

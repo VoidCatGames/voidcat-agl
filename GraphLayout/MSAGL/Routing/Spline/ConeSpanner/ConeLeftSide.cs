@@ -1,6 +1,6 @@
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Spline.ConeSpanner {
+namespace VoidCat.Agl.Routing.Spline.ConeSpanner {
     internal class ConeLeftSide:ConeSide {
         internal ConeLeftSide(Cone cone) { Cone = cone; }
 

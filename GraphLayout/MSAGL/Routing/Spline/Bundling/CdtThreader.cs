@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation;
 
-namespace Microsoft.Msagl.Routing.Spline.Bundling {
+namespace VoidCat.Agl.Routing.Spline.Bundling {
     internal class CdtThreader {
         readonly Point start;
         readonly Point end;

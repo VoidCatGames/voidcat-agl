@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Core
+namespace VoidCat.Agl.Core
 {
     /// <summary>
     /// Progress changed event argument class for MSAGL progress changes.

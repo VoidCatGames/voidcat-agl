@@ -4,10 +4,10 @@
 //
 // Copyright Microsoft Corporation.
 
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.Spline.ConeSpanner;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.Spline.ConeSpanner;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     internal class BasicReflectionEvent : SweepEvent {
         internal Obstacle ReflectingObstacle { get; private set; }
         internal Obstacle InitialObstacle { get; private set; }

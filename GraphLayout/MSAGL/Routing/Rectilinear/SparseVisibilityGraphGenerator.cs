@@ -7,11 +7,11 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.Spline.ConeSpanner;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.Spline.ConeSpanner;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     // Scan direction is parallel to the sweepline which moves in the perpendicular direction;
     // i.e. scan direction is "sideways" along the sweepline.  We do several passes, following Clarkson et al.,
     // "Rectilinear shortest paths through polygonal obstacles in O(n (log n)2) time" (checked into the enlistment).

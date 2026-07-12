@@ -10,7 +10,7 @@
 using System.Diagnostics;
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.ProjectionSolver
+namespace VoidCat.Agl.Core.ProjectionSolver
 {
     /// <summary>
     /// </summary>

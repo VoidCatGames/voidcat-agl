@@ -1,7 +1,7 @@
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Spline.ConeSpanner {
+namespace VoidCat.Agl.Routing.Spline.ConeSpanner {
     /// <summary>
     /// left here means an intersection of a left cone side with an obstacle edge
     /// </summary>

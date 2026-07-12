@@ -6,13 +6,13 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using SymmetricSegment = Microsoft.Msagl.Core.DataStructures.SymmetricTuple<Microsoft.Msagl.Core.Geometry.Point>;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using SymmetricSegment = VoidCat.Agl.Core.DataStructures.SymmetricTuple<VoidCat.Agl.Core.Geometry.Point>;
 
-namespace Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation {
+namespace VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation {
     ///<summary>
     ///triangulates the space between point, line segment and polygons in the Delaunay fashion
     ///</summary>

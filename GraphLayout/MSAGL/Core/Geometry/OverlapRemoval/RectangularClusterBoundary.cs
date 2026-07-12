@@ -1,7 +1,7 @@
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     /// <summary>
     /// Clusters can (optionally) have a rectangular border which is respected by overlap avoidance.
     /// Currently, this is controlled by FastIncrementalLayoutSettings.RectangularClusters.

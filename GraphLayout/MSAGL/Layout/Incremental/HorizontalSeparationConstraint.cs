@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Incremental {
+namespace VoidCat.Agl.Layout.Incremental {
     /// <summary>
     /// A horizontal separation constraint requires a minimum separation between x coordinates of two nodes,
     /// i.e. u.X + separation less or equal v.X

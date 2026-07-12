@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core;
 
-namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
     internal class ObstacleSideComparer : IComparer<SegmentBase> {
 
         readonly LineSweeperBase lineSweeper;

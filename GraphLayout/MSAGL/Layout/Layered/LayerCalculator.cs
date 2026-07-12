@@ -1,6 +1,6 @@
-using Microsoft.Msagl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.GraphAlgorithms;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// the basis class for layering algorithms
     /// </summary>

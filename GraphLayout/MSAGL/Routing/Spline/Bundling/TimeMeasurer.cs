@@ -1,7 +1,7 @@
 using System;
-using Microsoft.Msagl.DebugHelpers;
+using VoidCat.Agl.DebugHelpers;
 
-namespace Microsoft.Msagl.Routing.Spline.Bundling {
+namespace VoidCat.Agl.Routing.Spline.Bundling {
     /// <summary>
     /// Outputs run time in debug mode 
     /// </summary>

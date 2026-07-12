@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.DataStructures {
+namespace VoidCat.Agl.Core.DataStructures {
     internal class ComparerOnDelegate<T> : IComparer<T> {
         readonly Func<T, T, int> comparer;
 

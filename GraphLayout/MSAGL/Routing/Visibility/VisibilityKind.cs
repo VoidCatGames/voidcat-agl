@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
     /// <summary>
     /// 
     /// </summary>

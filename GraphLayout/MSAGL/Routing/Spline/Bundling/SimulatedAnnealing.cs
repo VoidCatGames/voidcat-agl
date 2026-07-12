@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.Routing.Visibility;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.Routing.Visibility;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation;
 
-namespace Microsoft.Msagl.Routing.Spline.Bundling {
+namespace VoidCat.Agl.Routing.Spline.Bundling {
     /// <summary>
     /// Adjust current bundle-routing
     /// </summary>
@@ -62,7 +62,7 @@ namespace Microsoft.Msagl.Routing.Spline.Bundling {
         /// Use constraint edge routing to reduce ink
         /// </summary>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303:Do not pass literals as localized parameters",
-         MessageId = "Microsoft.Msagl.Routing.Spline.Bundling.GeneralBundling.InkMetric.OutputQ(System.String,Microsoft.Msagl.Routing.Spline.Bundling.GeneralBundling.MetroGraphData,Microsoft.Msagl.Core.Routing.BundlingSettings)"), System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303:Do not pass literals as localized parameters", MessageId = "Microsoft.Msagl.Routing.Spline.Bundling.GeneralBundling.InkMetric.OutputQ(System.String,Microsoft.Msagl.Routing.Spline.Bundling.GeneralBundling.MetroGraphData,Microsoft.Msagl.Routing.Spline.Bundling.BundlingSettings)")]
+         MessageId = "VoidCat.Agl.Routing.Spline.Bundling.GeneralBundling.InkMetric.OutputQ(System.String,VoidCat.Agl.Routing.Spline.Bundling.GeneralBundling.MetroGraphData,VoidCat.Agl.Core.Routing.BundlingSettings)"), System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303:Do not pass literals as localized parameters", MessageId = "VoidCat.Agl.Routing.Spline.Bundling.GeneralBundling.InkMetric.OutputQ(System.String,VoidCat.Agl.Routing.Spline.Bundling.GeneralBundling.MetroGraphData,VoidCat.Agl.Routing.Spline.Bundling.BundlingSettings)")]
         bool FixRouting(HashSet<Point> changedPoints) {
             stationsForOptimizations = GetStationsForOptimizations(changedPoints);
 

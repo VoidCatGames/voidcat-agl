@@ -1,8 +1,8 @@
 using System.Diagnostics;
 
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     public class VertexEntry {
         /// <summary>
         /// A class that records an entry from a specific direction for a vertex.

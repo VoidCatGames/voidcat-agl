@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
-using Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.StressEnergy;
-using Microsoft.Msagl.Layout.MDS;
+using VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
+using VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.StressEnergy;
+using VoidCat.Agl.Layout.MDS;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval {
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval {
     /// <summary>
     /// Settings for Overlap Removal process. Usage of the properties depends on the algorithm.
     /// </summary>

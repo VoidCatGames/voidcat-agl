@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.DebugHelpers {
+namespace VoidCat.Agl.DebugHelpers {
     ///<summary>
     /// shows shapes 
     ///</summary>

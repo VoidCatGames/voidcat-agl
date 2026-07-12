@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Layout.Incremental
+namespace VoidCat.Agl.Layout.Incremental
 {
     /// <summary>
     /// A KDTree recursively divides particles in a 2D space into a balanced tree structure by doing horizontal splits for wide bounding boxes and vertical splits for tall bounding boxes.

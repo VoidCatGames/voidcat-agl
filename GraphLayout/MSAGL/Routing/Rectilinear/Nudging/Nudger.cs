@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.ProjectionSolver;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.ProjectionSolver;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Rectilinear.Nudging {
+namespace VoidCat.Agl.Routing.Rectilinear.Nudging {
     /// <summary>
     /// following paper "Orthogonal Connector Routing" which is included in the project
     /// </summary>

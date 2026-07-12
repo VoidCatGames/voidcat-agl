@@ -1,4 +1,4 @@
-namespace Microsoft.Msagl.DebugHelpers {
+namespace VoidCat.Agl.DebugHelpers {
 #pragma warning disable 1591
     /// <summary>
     /// tokens for the graph parser

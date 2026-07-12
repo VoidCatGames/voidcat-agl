@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.DebugHelpers.Persistence;
+using VoidCat.Agl.DebugHelpers.Persistence;
 
-namespace Microsoft.Msagl.DebugHelpers {
+namespace VoidCat.Agl.DebugHelpers {
     internal class CurveStream {
         string data;
         CurveStreamElement[] curveStreamElements;

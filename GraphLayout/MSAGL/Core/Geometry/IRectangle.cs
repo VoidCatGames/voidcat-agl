@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     public interface IRectangle<P> {
         void Add(P point);
        

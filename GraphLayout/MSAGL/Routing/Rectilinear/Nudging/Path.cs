@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Routing.Rectilinear.Nudging {
+namespace VoidCat.Agl.Routing.Rectilinear.Nudging {
     /// <summary>
     /// represents the path for an EdgeGeometry 
     /// </summary>

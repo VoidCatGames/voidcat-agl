@@ -1,9 +1,9 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     /// <summary>
     /// Two dimensional point
     /// </summary>

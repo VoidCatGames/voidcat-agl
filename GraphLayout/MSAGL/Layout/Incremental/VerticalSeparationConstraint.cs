@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Incremental {
+namespace VoidCat.Agl.Layout.Incremental {
     /// <summary>
     /// A vertical separation constraint requires a minimum separation between y coordinates of two nodes,
     /// i.e. u.Y + separation less or equal v.Y

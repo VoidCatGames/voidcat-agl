@@ -1,8 +1,8 @@
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Routing;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Routing;
 
-namespace Microsoft.Msagl.Prototype.LayoutEditing {
+namespace VoidCat.Agl.Prototype.LayoutEditing {
     /// <summary>
     /// node restore data
     /// </summary>

@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 #endregion
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     /// <summary>
     /// Represents a node containing a box and some user data.
     /// Is used in curve intersections routines.

@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     internal class NetworkSimplexForGeneralGraph : LayerCalculator {
         BasicGraphOnEdges<PolyIntEdge> graph;
         /// <summary>

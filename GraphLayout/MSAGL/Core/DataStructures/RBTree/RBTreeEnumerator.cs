@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.DataStructures {
+namespace VoidCat.Agl.Core.DataStructures {
     internal class RBTreeEnumerator<T> : IEnumerator<T> {
         bool initialState;
         RbTree<T> tree;

@@ -1,24 +1,24 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.Layout.Incremental;
-using Microsoft.Msagl.Layout.Initial;
-using Microsoft.Msagl.Layout.LargeGraphLayout;
-using Microsoft.Msagl.Layout.Layered;
-using Microsoft.Msagl.Layout.MDS;
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.Rectilinear;
-using Microsoft.Msagl.Prototype.Ranking;
-using Microsoft.Msagl.Routing.Spline.Bundling;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.Layout.Incremental;
+using VoidCat.Agl.Layout.Initial;
+using VoidCat.Agl.Layout.LargeGraphLayout;
+using VoidCat.Agl.Layout.Layered;
+using VoidCat.Agl.Layout.MDS;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.Rectilinear;
+using VoidCat.Agl.Prototype.Ranking;
+using VoidCat.Agl.Routing.Spline.Bundling;
 
-namespace Microsoft.Msagl.Miscellaneous {
+namespace VoidCat.Agl.Miscellaneous {
     /// <summary>
     /// A set of helper methods for executing a layout.
     /// These exist for compatibility with previous consumers of MSAGL,

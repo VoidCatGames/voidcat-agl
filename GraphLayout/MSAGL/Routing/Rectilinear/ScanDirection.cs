@@ -3,10 +3,10 @@
 // MSAGL ScanDirection class for Rectilinear Edge Routing line generation.
 //
 // Copyright Microsoft Corporation.
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     // Encapsulate a direction and some useful values derived therefrom.
     internal class ScanDirection {
         // The direction of primary interest, either the direction of the sweep (the

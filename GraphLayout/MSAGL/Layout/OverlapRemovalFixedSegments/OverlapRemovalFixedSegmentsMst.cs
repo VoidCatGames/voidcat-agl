@@ -1,15 +1,15 @@
-﻿using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using SymmetricSegment = Microsoft.Msagl.Core.DataStructures.SymmetricTuple<Microsoft.Msagl.Core.Geometry.Point>;
-namespace Microsoft.Msagl.Layout.OverlapRemovalFixedSegments
+using SymmetricSegment = VoidCat.Agl.Core.DataStructures.SymmetricTuple<VoidCat.Agl.Core.Geometry.Point>;
+namespace VoidCat.Agl.Layout.OverlapRemovalFixedSegments
 {
 
     public enum SiteType { CenterBoxMoveable, CenterBoxFixed, PointOnSegment }

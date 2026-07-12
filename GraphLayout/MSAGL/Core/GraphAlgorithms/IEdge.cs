@@ -1,4 +1,4 @@
-namespace Microsoft.Msagl.Core.GraphAlgorithms {
+namespace VoidCat.Agl.Core.GraphAlgorithms {
     /// <summary>
     /// an edge interface
     /// </summary>

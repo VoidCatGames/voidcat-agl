@@ -5,14 +5,14 @@
 // Copyright Microsoft Corporation.
 using System.Diagnostics;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Core;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     internal class RectilinearScanLine : IComparer<BasicObstacleSide> {
         readonly ScanDirection scanDirection;
 

@@ -1,4 +1,4 @@
-namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
 
     /// <summary>
     /// interface for geometry objects with labels

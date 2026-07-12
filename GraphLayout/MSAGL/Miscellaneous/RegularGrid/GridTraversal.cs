@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.ProjectionSolver;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.ProjectionSolver;
 
-namespace Microsoft.Msagl.Miscellaneous.RegularGrid
+namespace VoidCat.Agl.Miscellaneous.RegularGrid
 {
     /// <summary>
     /// Traversal of regular grid

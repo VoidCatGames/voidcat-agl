@@ -1,20 +1,20 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.Routing.Visibility;
-using Point = Microsoft.Msagl.Core.Geometry.Point;
-using SymmetricSegment = Microsoft.Msagl.Core.DataStructures.SymmetricTuple<Microsoft.Msagl.Core.Geometry.Point>;
-//using Microsoft.Msagl.Miscellaneous.Rounded;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.Routing.Visibility;
+using Point = VoidCat.Agl.Core.Geometry.Point;
+using SymmetricSegment = VoidCat.Agl.Core.DataStructures.SymmetricTuple<VoidCat.Agl.Core.Geometry.Point>;
+//using VoidCat.Agl.Miscellaneous.Rounded;
 
-namespace Microsoft.Msagl.Miscellaneous.ConstrainedSkeleton
+namespace VoidCat.Agl.Miscellaneous.ConstrainedSkeleton
 {
     internal class SteinerCdt
     {

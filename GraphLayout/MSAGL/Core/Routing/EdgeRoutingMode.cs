@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Microsoft.Msagl.Core.Routing {
+namespace VoidCat.Agl.Core.Routing {
     /// <summary>
     /// defines the way edges are routed
     /// </summary>

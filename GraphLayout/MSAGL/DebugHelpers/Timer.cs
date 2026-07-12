@@ -1,7 +1,7 @@
-﻿using System.Runtime.InteropServices;
+using System.Runtime.InteropServices;
 using System.ComponentModel;
 
-namespace Microsoft.Msagl.DebugHelpers {
+namespace VoidCat.Agl.DebugHelpers {
     /// <summary>
     /// support for native method calls
     /// </summary>

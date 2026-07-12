@@ -1,11 +1,11 @@
 using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
 using System.Linq;
 
-namespace Microsoft.Msagl.Routing.Rectilinear.Nudging {
+namespace VoidCat.Agl.Routing.Rectilinear.Nudging {
     /// <summary>
     /// represents a segment of a path
     /// </summary>

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Prototype.Ranking {
+namespace VoidCat.Agl.Prototype.Ranking {
     /// <summary>
     /// Class for centrality computation.
     /// </summary>

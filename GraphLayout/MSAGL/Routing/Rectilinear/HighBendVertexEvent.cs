@@ -4,9 +4,9 @@
 //
 // Copyright Microsoft Corporation.
 
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     internal class HighBendVertexEvent: BasicVertexEvent {
         internal HighBendVertexEvent(Obstacle obstacle, PolylinePoint p) : base(obstacle, p) { }
     }

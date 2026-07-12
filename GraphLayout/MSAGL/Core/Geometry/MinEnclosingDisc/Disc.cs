@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Core.Geometry
+namespace VoidCat.Agl.Core.Geometry
 {
     /// <summary>
     /// Disc for use in Minimum Enclosing Disc computation

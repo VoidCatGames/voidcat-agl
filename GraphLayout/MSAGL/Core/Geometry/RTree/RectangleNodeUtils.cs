@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     internal sealed class RectangleNodeUtils {
         internal static void CrossRectangleNodes<TA, TB, P>(RectangleNode<TA,P > a, RectangleNode<TB, P> b, Action<TA, TB> action) {
             if (!a.rectangle.Intersects(b.rectangle))

@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Layout.Incremental;
-using Microsoft.Msagl.Layout.Layered;
-using Microsoft.Msagl.Layout.MDS;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Layout.Incremental;
+using VoidCat.Agl.Layout.Layered;
+using VoidCat.Agl.Layout.MDS;
 
-//using Microsoft.Msagl.Routing;
+//using VoidCat.Agl.Routing;
 
-namespace Microsoft.Msagl.Layout.Initial
+namespace VoidCat.Agl.Layout.Initial
 {
     /// <summary>
     /// Methods for obtaining an initial layout of a graph using various means.

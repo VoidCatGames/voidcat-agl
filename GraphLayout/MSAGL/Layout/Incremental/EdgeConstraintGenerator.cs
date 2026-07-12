@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Layout.Incremental {
+namespace VoidCat.Agl.Layout.Incremental {
     class TNode {
         internal LinkedListNode<TNode> stackNode;
         internal Node v;

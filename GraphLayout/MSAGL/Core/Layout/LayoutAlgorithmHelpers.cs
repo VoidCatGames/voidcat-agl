@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 
-namespace Microsoft.Msagl.Core.Layout
+namespace VoidCat.Agl.Core.Layout
 {
     /// <summary>
     /// static helper methods for layout algorithms

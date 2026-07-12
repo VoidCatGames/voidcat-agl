@@ -1,6 +1,6 @@
-﻿using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Prototype.LayoutEditing
+namespace VoidCat.Agl.Prototype.LayoutEditing
 {
     /// <summary>
     /// Helper class for creating RestoreData objects from GeometryGraph objects.

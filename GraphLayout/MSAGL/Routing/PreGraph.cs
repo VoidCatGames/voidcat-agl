@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Routing {
+namespace VoidCat.Agl.Routing {
     //this class contains a set of edge geometries, and set of node boundaries, ICurves, that might obstruct the edge routing 
     internal class PreGraph {
         internal List<EdgeGeometry> edgeGeometries;

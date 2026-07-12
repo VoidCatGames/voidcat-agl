@@ -1,4 +1,4 @@
-﻿using Microsoft.Msagl.Layout.LargeGraphLayout;
+using VoidCat.Agl.Layout.LargeGraphLayout;
 using System;
 using System.Linq;
 using System.Collections.Generic;
@@ -7,15 +7,15 @@ using System.Globalization;
 using System.IO;
 using System.Threading;
 using System.Xml;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.Layout.Layered;
-using Microsoft.Msagl.Layout.MDS;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.Layout.Layered;
+using VoidCat.Agl.Layout.MDS;
 
-namespace Microsoft.Msagl.DebugHelpers.Persistence
+namespace VoidCat.Agl.DebugHelpers.Persistence
 {
     /// <summary>
     /// writes a GeometryGraph to a stream

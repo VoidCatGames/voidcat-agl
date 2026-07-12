@@ -4,10 +4,10 @@
 //
 // Copyright Microsoft Corporation.
 
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Routing.Spline.ConeSpanner;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Routing.Spline.ConeSpanner;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     internal abstract class BasicVertexEvent : VertexEvent {
         // This is just a subclass to carry the Obstacle object in addition to the Polyline.
         internal Obstacle Obstacle { get; private set; }

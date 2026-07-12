@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     
     internal class HierarchyCalculator {
 

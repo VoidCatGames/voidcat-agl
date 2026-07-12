@@ -1,17 +1,17 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.Rectilinear;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.Rectilinear;
 
-namespace Microsoft.Msagl.Layout.Layered
+namespace VoidCat.Agl.Layout.Layered
 {
     /// <summary>
     /// A facade for LayeredLayout that implements AlgorithmBase

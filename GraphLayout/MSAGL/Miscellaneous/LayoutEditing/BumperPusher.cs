@@ -2,12 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.DebugHelpers;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.DebugHelpers;
 
-namespace Microsoft.Msagl.Miscellaneous.LayoutEditing {
+namespace VoidCat.Agl.Miscellaneous.LayoutEditing {
     /// <summary>
     /// pushes the nodes it got bumped to: pushes horizontally or vertically
     /// </summary>

@@ -11,7 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Core.Geometry
+namespace VoidCat.Agl.Core.Geometry
 {
     /// <summary>
     /// ConstraintGenerator is the driving class for overlap removal.  The caller

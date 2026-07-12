@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// This is an edge going down only one layer.
     /// It points to the original edge that can pass several layers

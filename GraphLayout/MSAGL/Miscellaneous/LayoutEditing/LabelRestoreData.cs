@@ -1,7 +1,7 @@
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing;
 
-namespace Microsoft.Msagl.Prototype.LayoutEditing {
+namespace VoidCat.Agl.Prototype.LayoutEditing {
     /// <summary>
     /// keeps a label restore data
     /// </summary>

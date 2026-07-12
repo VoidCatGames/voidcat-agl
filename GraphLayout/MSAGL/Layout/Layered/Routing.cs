@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Routing;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Routing;
 
 #if PPC
 using System.Threading;
 // susanlwo
 #endif
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// The class responsible for the routing of splines
     /// </summary>
@@ -94,7 +94,7 @@ foreach (var intEdgeList in Database.RegularMultiedges) {
             return ProperLayeredGraph.OutDegreeIsMoreThanOne(intEdge.Source) || ProperLayeredGraph.InDegreeIsMoreThanOne(intEdge.Target);
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "Microsoft.Msagl.Core.Geometry.Site")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "VoidCat.Agl.Core.Geometry.Site")]
         void CreateSelfSplines()
         {
             foreach (var kv in Database.Multiedges)

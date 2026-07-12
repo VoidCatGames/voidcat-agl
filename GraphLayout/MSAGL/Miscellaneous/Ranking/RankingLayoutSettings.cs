@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Prototype.Ranking {
+namespace VoidCat.Agl.Prototype.Ranking {
     /// <summary>
     /// Ranking layout settings
     /// </summary>

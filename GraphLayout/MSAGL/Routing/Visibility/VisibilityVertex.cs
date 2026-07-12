@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Visibility
+namespace VoidCat.Agl.Routing.Visibility
 {
     [DebuggerDisplay("({Point.X} {Point.Y})")]
     public class VisibilityVertex : IComparer<VisibilityEdge>

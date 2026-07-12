@@ -1,4 +1,4 @@
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.StressEnergy
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.StressEnergy
 {
     /// <summary>
     /// A vote for a certain distance from the node with voterIndex.

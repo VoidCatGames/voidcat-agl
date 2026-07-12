@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// Log class
     /// </summary>

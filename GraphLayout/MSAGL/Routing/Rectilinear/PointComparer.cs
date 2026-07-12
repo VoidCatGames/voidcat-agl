@@ -1,9 +1,9 @@
 using System;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     internal class PointComparer {
         // Due to the vagaries of rounding, we may encounter a result that is not quite 0
         // when subtracting two numbers that are close.

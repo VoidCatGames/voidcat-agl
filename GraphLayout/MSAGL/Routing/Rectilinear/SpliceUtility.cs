@@ -1,10 +1,10 @@
 using System;
 using System.Diagnostics;
 
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     static internal class SpliceUtility {
         // Most of the original contents of this file have been subsumed into ObstacleTree and TransientGraphUtility.
         internal static Point MungeClosestIntersectionInfo(Point rayOrigin, IntersectionInfo closestIntersection, bool isHorizontal) {

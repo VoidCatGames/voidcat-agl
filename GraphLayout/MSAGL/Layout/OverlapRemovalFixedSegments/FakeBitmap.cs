@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Layout.OverlapRemovalFixedSegments {
+namespace VoidCat.Agl.Layout.OverlapRemovalFixedSegments {
     internal class FakeBitmap {
         readonly int _width;
         readonly int _height;

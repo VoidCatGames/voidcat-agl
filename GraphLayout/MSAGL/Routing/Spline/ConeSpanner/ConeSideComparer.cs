@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Spline.ConeSpanner {
+namespace VoidCat.Agl.Routing.Spline.ConeSpanner {
     internal class ConeSideComparer : IComparer<ConeSide> {
         Point x;
         internal void SetOperand(ConeSide activeElement) {

@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     /// <summary>
     /// 2 by 3 matrix of plane affine transformations
     /// </summary>

@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation {
+namespace VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation {
     ///<summary>
     /// an efficient class to simulate a three element array
     ///</summary>

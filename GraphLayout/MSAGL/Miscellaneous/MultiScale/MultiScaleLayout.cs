@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Miscellaneous;
-using Microsoft.Msagl.Layout.Incremental;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Miscellaneous;
+using VoidCat.Agl.Layout.Incremental;
 
-namespace Microsoft.Msagl.Prototype.MultiScale
+namespace VoidCat.Agl.Prototype.MultiScale
 {
     class MultiScaleLayout
     {

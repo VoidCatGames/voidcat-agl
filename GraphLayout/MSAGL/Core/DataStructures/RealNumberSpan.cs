@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Core.DataStructures {
+namespace VoidCat.Agl.Core.DataStructures {
     /// <summary>
     /// this class behaves like one dimensional bounding box
     /// </summary>

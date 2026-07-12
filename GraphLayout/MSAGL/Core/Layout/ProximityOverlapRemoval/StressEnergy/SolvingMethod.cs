@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.StressEnergy {
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.StressEnergy {
    
     /// <summary>
     /// Determines how the minimum of the quadratic majorant is determined.

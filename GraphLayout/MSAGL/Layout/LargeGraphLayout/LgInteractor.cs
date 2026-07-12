@@ -1,37 +1,37 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.GraphmapsWithMesh;
-using Microsoft.Msagl.Layout.Incremental;
-using Microsoft.Msagl.Layout.Initial;
-using Microsoft.Msagl.Layout.LargeGraphLayout.NodeRailLevelCalculator;
-using Microsoft.Msagl.Layout.Layered;
-using Microsoft.Msagl.Layout.MDS;
-using Microsoft.Msagl.Layout.OverlapRemovalFixedSegments;
-using Microsoft.Msagl.Miscellaneous;
-using Microsoft.Msagl.Miscellaneous.ConstrainedSkeleton;
-using Microsoft.Msagl.Miscellaneous.RegularGrid;
-using Microsoft.Msagl.Routing.Visibility;
-using Edge = Microsoft.Msagl.Core.Layout.Edge;
-using LineSegment = Microsoft.Msagl.Core.Geometry.Curves.LineSegment;
-using Point = Microsoft.Msagl.Core.Geometry.Point;
-using Rectangle = Microsoft.Msagl.Core.Geometry.Rectangle;
-using Size = Microsoft.Msagl.Core.DataStructures.Size;
-using SymmetricSegment = Microsoft.Msagl.Core.DataStructures.SymmetricTuple<Microsoft.Msagl.Core.Geometry.Point>;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.MinimumSpanningTree;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.GraphmapsWithMesh;
+using VoidCat.Agl.Layout.Incremental;
+using VoidCat.Agl.Layout.Initial;
+using VoidCat.Agl.Layout.LargeGraphLayout.NodeRailLevelCalculator;
+using VoidCat.Agl.Layout.Layered;
+using VoidCat.Agl.Layout.MDS;
+using VoidCat.Agl.Layout.OverlapRemovalFixedSegments;
+using VoidCat.Agl.Miscellaneous;
+using VoidCat.Agl.Miscellaneous.ConstrainedSkeleton;
+using VoidCat.Agl.Miscellaneous.RegularGrid;
+using VoidCat.Agl.Routing.Visibility;
+using Edge = VoidCat.Agl.Core.Layout.Edge;
+using LineSegment = VoidCat.Agl.Core.Geometry.Curves.LineSegment;
+using Point = VoidCat.Agl.Core.Geometry.Point;
+using Rectangle = VoidCat.Agl.Core.Geometry.Rectangle;
+using Size = VoidCat.Agl.Core.DataStructures.Size;
+using SymmetricSegment = VoidCat.Agl.Core.DataStructures.SymmetricTuple<VoidCat.Agl.Core.Geometry.Point>;
 
 
-namespace Microsoft.Msagl.Layout.LargeGraphLayout {
+namespace VoidCat.Agl.Layout.LargeGraphLayout {
     /// <summary>
     ///     enables to interactively explore a large graph
     /// </summary>

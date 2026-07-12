@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Layout.Initial;
-using Microsoft.Msagl.Layout.LargeGraphLayout;
-using Microsoft.Msagl.Routing.Spline.ConeSpanner;
-using Microsoft.Msagl.Routing.Visibility;
-using Microsoft.Msagl.DebugHelpers;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Layout.Initial;
+using VoidCat.Agl.Layout.LargeGraphLayout;
+using VoidCat.Agl.Routing.Spline.ConeSpanner;
+using VoidCat.Agl.Routing.Visibility;
+using VoidCat.Agl.DebugHelpers;
 
-namespace Microsoft.Msagl.Routing {
+namespace VoidCat.Agl.Routing {
     /// <summary>
     /// the router between nodes
     /// </summary>

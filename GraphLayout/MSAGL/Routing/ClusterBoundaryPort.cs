@@ -1,9 +1,9 @@
-﻿using System;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
+using System;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Routing {
+namespace VoidCat.Agl.Routing {
     ///<summary>
     ///this is a port for routing from a cluster
     ///</summary>

@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.CodeDom;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Layout.LargeGraphLayout;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Layout.LargeGraphLayout;
 
-namespace Microsoft.Msagl.GraphmapsWithMesh
+namespace VoidCat.Agl.GraphmapsWithMesh
 {
     class LocalModifications
     {
@@ -314,7 +314,7 @@ namespace Microsoft.Msagl.GraphmapsWithMesh
          * INPUT: A set of points P in sequence and a tolerance value
          * OUTPUT: A simplified chain after removing some of the points from P
          */
-        public static void PolygonalChainSimplification(Microsoft.Msagl.Core.Geometry.Point[] PointList, int start, int end, double epsilon)
+        public static void PolygonalChainSimplification(VoidCat.Agl.Core.Geometry.Point[] PointList, int start, int end, double epsilon)
         {
 
             // Find the point with the maximum distance

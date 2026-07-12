@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     internal class HorizontalConstraintsForSugiyama {
         readonly Set<Tuple<Node, Node>> leftRightConstraints = new Set<Tuple<Node, Node>>();
         readonly Set<Tuple<Node, Node>> leftRightNeighbors = new Set<Tuple<Node, Node>>();

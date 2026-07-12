@@ -1,5 +1,5 @@
-﻿using System;
-namespace Microsoft.Msagl.Core
+using System;
+namespace VoidCat.Agl.Core
 {
     /// <summary>
     /// Base class for algorithms that are cancelable and report progress

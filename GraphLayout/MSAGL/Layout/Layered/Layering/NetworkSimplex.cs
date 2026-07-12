@@ -2,11 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.GraphAlgorithms;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     
     /// <summary>
     /// The algorithm follows "A technique for Drawing Directed Graphs", Gansner, Koutsofios, North, Vo.

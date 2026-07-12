@@ -10,7 +10,7 @@
 using System;
 using System.Globalization;
 
-namespace Microsoft.Msagl.Core.Geometry
+namespace VoidCat.Agl.Core.Geometry
 {
     using System.Diagnostics;
 

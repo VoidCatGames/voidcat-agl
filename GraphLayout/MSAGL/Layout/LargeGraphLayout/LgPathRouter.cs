@@ -1,18 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.DebugHelpers;
-using Microsoft.Msagl.GraphmapsWithMesh;
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.Rectilinear.Nudging;
-using Microsoft.Msagl.Routing.Visibility;
-using SymmetricSegment = Microsoft.Msagl.Core.DataStructures.SymmetricTuple<Microsoft.Msagl.Core.Geometry.Point>;
-namespace Microsoft.Msagl.Layout.LargeGraphLayout
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.DebugHelpers;
+using VoidCat.Agl.GraphmapsWithMesh;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.Rectilinear.Nudging;
+using VoidCat.Agl.Routing.Visibility;
+using SymmetricSegment = VoidCat.Agl.Core.DataStructures.SymmetricTuple<VoidCat.Agl.Core.Geometry.Point>;
+namespace VoidCat.Agl.Layout.LargeGraphLayout
 {
     internal class LgPathRouter
     {

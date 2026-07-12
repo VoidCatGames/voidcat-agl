@@ -1,4 +1,4 @@
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     ///<summary>
     ///continue or stop the hit tree traversal
     ///</summary>

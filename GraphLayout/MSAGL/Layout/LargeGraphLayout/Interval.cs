@@ -1,7 +1,7 @@
-﻿using System;
-using Microsoft.Msagl.Core.Geometry;
+using System;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Layout.LargeGraphLayout {
+namespace VoidCat.Agl.Layout.LargeGraphLayout {
     /// <summary>
     /// represents a range of doubles
     /// </summary>

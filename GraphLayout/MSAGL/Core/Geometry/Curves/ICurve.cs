@@ -1,4 +1,4 @@
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     /// <summary>
     /// The interface for curves: instances of ICurve inside of GLEE
     /// are BSpline,Curve,LineSeg, Ellipse,CubicBezierSeg and ArrowTipCurve.

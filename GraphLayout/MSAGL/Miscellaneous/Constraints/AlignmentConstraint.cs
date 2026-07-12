@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Layout.Incremental;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Layout.Incremental;
 
-namespace Microsoft.Msagl.Prototype.Constraints {
+namespace VoidCat.Agl.Prototype.Constraints {
     /// <summary>
     /// This doesn't work yet, but it will be a constraint that aligns nodes, optionally to some fixed orientation (horizontal, vertical, 45 degrees, etc).
     /// </summary>

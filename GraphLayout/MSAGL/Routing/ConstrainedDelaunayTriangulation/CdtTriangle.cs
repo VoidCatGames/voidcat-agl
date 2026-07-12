@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation {
+namespace VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation {
     /// <summary>
     /// a trianlge oriented counterclockwise
     /// </summary>

@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     /// <summary>
     /// the helper class to create curves
     /// </summary>

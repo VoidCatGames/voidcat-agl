@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Core.DataStructures {
+namespace VoidCat.Agl.Core.DataStructures {
     /// <summary>
     /// a tuple such that (a,b)==(b,a) for any a and b
     /// </summary>

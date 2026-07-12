@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation;
-using Microsoft.Msagl.Routing.Visibility;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation;
+using VoidCat.Agl.Routing.Visibility;
 
-namespace Microsoft.Msagl.Routing.Spline.Bundling {
+namespace VoidCat.Agl.Routing.Spline.Bundling {
     internal class SdVertex {
         internal VisibilityVertex VisibilityVertex;
         internal List<SdBoneEdge> InBoneEdges = new List<SdBoneEdge>();

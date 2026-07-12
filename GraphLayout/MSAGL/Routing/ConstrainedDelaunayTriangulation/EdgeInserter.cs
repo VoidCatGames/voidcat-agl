@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.ConstrainedDelaunayTriangulation {
+namespace VoidCat.Agl.Routing.ConstrainedDelaunayTriangulation {
     internal class EdgeInserter {
         readonly CdtEdge edge;
         readonly Set<CdtTriangle> triangles;

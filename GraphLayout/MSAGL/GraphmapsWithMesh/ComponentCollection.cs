@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.GraphmapsWithMesh
+namespace VoidCat.Agl.GraphmapsWithMesh
 {
 
     /*

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     /// <summary>
     /// Works for convex curves by calculating a value which might be slightly greater than the exact penetration depth
     /// It is presize on convex polygons.

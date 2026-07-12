@@ -1,5 +1,5 @@
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     internal class HullPoint {
         Point point;
 

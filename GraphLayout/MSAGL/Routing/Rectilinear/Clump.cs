@@ -6,7 +6,7 @@
 
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     /// <summary>
     /// This is the list of obstacles in the clump.
     /// </summary>

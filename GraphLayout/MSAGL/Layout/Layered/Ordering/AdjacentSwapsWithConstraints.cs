@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     internal class AdjacentSwapsWithConstraints {
         const int maxNumberOfAdjacentExchanges = 50;
         readonly bool hasCrossWeights;

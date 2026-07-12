@@ -3,10 +3,10 @@
 // MSAGL class for ObstacleSides with the higher scanline-parallel coordinates for Rectilinear Edge Routing.
 //
 // Copyright Microsoft Corporation.
-using Microsoft.Msagl;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     /// <summary>
     /// HighObstacleSide is a side of the obstacle that is between LowestVertex and HighestVertex
     /// to the higher scanline-parallel coordinate-value side; i.e. to the right (higher X-coordinate)

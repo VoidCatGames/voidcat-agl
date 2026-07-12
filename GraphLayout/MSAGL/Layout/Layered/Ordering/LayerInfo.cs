@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     internal class LayerInfo {
         /// <summary>
         /// constrained on the level of neighBlocks

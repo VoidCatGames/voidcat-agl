@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.MDS
+namespace VoidCat.Agl.Layout.MDS
 {
     /// <summary>
     /// An algorithm for computing the distances between a selected set of nodes and all nodes.

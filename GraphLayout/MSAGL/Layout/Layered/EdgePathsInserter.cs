@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.GraphAlgorithms;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// This class is used in the case when there are multiple edges, but there is no need to dublicate layers.
     /// We just insert dummy nodes for edge middles without distorting the order of vertices in the layers.

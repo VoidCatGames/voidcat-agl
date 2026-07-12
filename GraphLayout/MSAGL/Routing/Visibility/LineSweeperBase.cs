@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Routing.Spline.ConeSpanner;
-using Microsoft.Msagl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Routing.Spline.ConeSpanner;
+using VoidCat.Agl.Core;
 
-namespace Microsoft.Msagl.Routing.Visibility {
+namespace VoidCat.Agl.Routing.Visibility {
     internal class LineSweeperBase : IComparer<SweepEvent> {
         Point directionPerp; // sweep direction rotated 90 degrees clockwse
         BinaryHeapWithComparer<SweepEvent> eventQueue;

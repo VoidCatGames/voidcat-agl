@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Msagl.Core.Layout {
+namespace VoidCat.Agl.Core.Layout {
     public enum LabelPlacement {
         Top, Bottom, Left, Right
     };

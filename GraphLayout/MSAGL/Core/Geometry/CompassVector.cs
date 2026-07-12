@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     internal struct CompassVector {
         internal CompassVector(Direction direction)
             : this() {

@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.DataStructures;
-using Microsoft.Msagl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.DataStructures;
+using VoidCat.Agl.Core.GraphAlgorithms;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// The implementation follows "Fast and Simple Horizontal Coordinate Assignment" of Ulrik Brandes and Boris K�opf
     /// The paper has two serious bugs that this code resolves.
@@ -93,8 +93,8 @@ namespace Microsoft.Msagl.Layout.Layered {
         void SortInAndOutEdges() {
             FillLowMedians();
             FillUpperMedins();
-            //Microsoft.Msagl.Ordering.EdgeComparerBySource edgeComparerBySource = new Ordering.EdgeComparerBySource(this.la.X);
-            //Microsoft.Msagl.Ordering.EdgeComparerByTarget edgeComparerByTarget = new Ordering.EdgeComparerByTarget(this.la.X);
+            //VoidCat.Agl.Ordering.EdgeComparerBySource edgeComparerBySource = new Ordering.EdgeComparerBySource(this.la.X);
+            //VoidCat.Agl.Ordering.EdgeComparerByTarget edgeComparerByTarget = new Ordering.EdgeComparerByTarget(this.la.X);
             //for (int i = 0; i < this.nOfOriginalVertices; i++) {
             //    Array.Sort<LayerEdge>(this.graph.InEdges(i) as LayerEdge[], edgeComparerBySource);
             //    Array.Sort<LayerEdge>(this.graph.OutEdges(i) as LayerEdge[], edgeComparerByTarget);

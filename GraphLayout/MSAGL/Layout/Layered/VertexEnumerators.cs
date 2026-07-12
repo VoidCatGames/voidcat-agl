@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Collections;
 
-using Microsoft.Msagl.Core.GraphAlgorithms;
+using VoidCat.Agl.Core.GraphAlgorithms;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     /// <summary>
     /// Enumerator of the vertex successors
     /// </summary>

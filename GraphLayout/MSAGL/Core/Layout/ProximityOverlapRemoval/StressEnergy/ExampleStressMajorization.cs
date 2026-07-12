@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.StressEnergy {
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.StressEnergy {
     /// <summary>
     /// Example on how to use Stress Majorization with a small graph and Localized method.
     /// </summary>

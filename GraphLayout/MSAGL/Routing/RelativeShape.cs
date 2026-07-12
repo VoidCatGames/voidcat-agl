@@ -5,9 +5,9 @@
 // Copyright Microsoft Corporation.
 
 using System;
-using Microsoft.Msagl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Geometry.Curves;
 
-namespace Microsoft.Msagl.Routing {
+namespace VoidCat.Agl.Routing {
     /// <summary>
     /// A shape wrapping an ICurve delegate, providing additional information.
     /// </summary>

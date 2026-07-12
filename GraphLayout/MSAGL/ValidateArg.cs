@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -6,9 +6,9 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Core
+namespace VoidCat.Agl.Core
 {
     /// <summary>
     /// Helper class for validating parameter arguments.

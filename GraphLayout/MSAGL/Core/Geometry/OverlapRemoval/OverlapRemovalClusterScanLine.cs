@@ -8,9 +8,9 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System.Diagnostics;
-using Microsoft.Msagl.Core.DataStructures;
+using VoidCat.Agl.Core.DataStructures;
 
-namespace Microsoft.Msagl.Core.Geometry 
+namespace VoidCat.Agl.Core.Geometry 
 {
     public partial class OverlapRemovalCluster
     {

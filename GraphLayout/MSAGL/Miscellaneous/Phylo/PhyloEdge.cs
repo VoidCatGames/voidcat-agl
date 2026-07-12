@@ -1,6 +1,6 @@
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Layout;
 
-namespace Microsoft.Msagl.Prototype.Phylo {
+namespace VoidCat.Agl.Prototype.Phylo {
     /// <summary>
     /// Phylogenetic edge: an edge with a specified length
     /// </summary>

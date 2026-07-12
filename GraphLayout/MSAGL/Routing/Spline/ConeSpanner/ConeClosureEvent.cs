@@ -1,6 +1,6 @@
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Spline.ConeSpanner {
+namespace VoidCat.Agl.Routing.Spline.ConeSpanner {
     /// <summary>
     /// this event caused by the intersection of a ObstacleSideSegment and the other cone side of the same cone
     /// when this event happens the cone has to be removed

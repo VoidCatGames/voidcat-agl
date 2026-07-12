@@ -1,7 +1,7 @@
 using System;
-using Microsoft.Msagl.Prototype.LayoutEditing;
+using VoidCat.Agl.Prototype.LayoutEditing;
 
-namespace Microsoft.Msagl.Prototype.LayoutEditing {
+namespace VoidCat.Agl.Prototype.LayoutEditing {
     /// <summary>
     /// a base class for restoring geometrical objects
     /// </summary>

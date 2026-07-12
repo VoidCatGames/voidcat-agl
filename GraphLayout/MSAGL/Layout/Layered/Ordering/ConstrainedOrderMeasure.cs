@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     internal class ConstrainedOrderMeasure {
         readonly int numberOfCrossings;
         //readonly double deviationFromConstraints;

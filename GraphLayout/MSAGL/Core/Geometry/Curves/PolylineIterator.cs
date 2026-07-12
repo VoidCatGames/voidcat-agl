@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves
+namespace VoidCat.Agl.Core.Geometry.Curves
 {
     internal class PolylineIterator:IEnumerator<Point>
     {

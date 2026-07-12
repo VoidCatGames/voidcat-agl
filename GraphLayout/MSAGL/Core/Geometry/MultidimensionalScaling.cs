@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     /// <summary>
     /// Classical Multidimensional Scaling. Given a set of proximities or
     /// dissimilarities ordistances between objects, multidimensional scaling

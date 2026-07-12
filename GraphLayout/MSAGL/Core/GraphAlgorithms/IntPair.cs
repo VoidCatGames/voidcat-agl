@@ -1,6 +1,6 @@
 using System;
 
-namespace Microsoft.Msagl.Core.GraphAlgorithms {
+namespace VoidCat.Agl.Core.GraphAlgorithms {
     /// <summary>
     /// Represents a couple of integers.
     /// </summary>

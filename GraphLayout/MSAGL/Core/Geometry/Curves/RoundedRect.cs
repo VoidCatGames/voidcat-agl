@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Microsoft.Msagl.Core.Geometry.Curves {
+namespace VoidCat.Agl.Core.Geometry.Curves {
     /// <summary>
     /// A rectanglular curve with rounded corners
     /// </summary>

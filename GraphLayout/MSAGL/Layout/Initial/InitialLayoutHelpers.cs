@@ -1,18 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Msagl.Core;
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.Layout.Incremental;
-using Microsoft.Msagl.Layout.Layered;
-using Microsoft.Msagl.Layout.MDS;
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.Routing.Rectilinear;
+using VoidCat.Agl.Core;
+using VoidCat.Agl.Core.Layout;
+using VoidCat.Agl.Core.Routing;
+using VoidCat.Agl.Layout.Incremental;
+using VoidCat.Agl.Layout.Layered;
+using VoidCat.Agl.Layout.MDS;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.Routing.Rectilinear;
 
-namespace Microsoft.Msagl.Layout.Initial
+namespace VoidCat.Agl.Layout.Initial
 {
     static class InitialLayoutHelpers
     {

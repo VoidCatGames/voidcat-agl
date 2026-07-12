@@ -1,18 +1,18 @@
-﻿
+
 using System.Collections.Generic;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Geometry.Curves;
-using Microsoft.Msagl.Core.Layout;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry.Curves;
+using VoidCat.Agl.Core.Layout;
 using System.Linq;
 using System;
-using Microsoft.Msagl.Routing;
-using Microsoft.Msagl.DebugHelpers;
+using VoidCat.Agl.Routing;
+using VoidCat.Agl.DebugHelpers;
 using System.Diagnostics;
 using System.Threading;
 using System.Reflection.Emit;
-using Microsoft.Msagl.Layout.MDS;
+using VoidCat.Agl.Layout.MDS;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
 
     internal class SmoothedPolylineCalculator {
         CornerSite headSite;// corresponds to the bottom point

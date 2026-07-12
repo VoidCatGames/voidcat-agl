@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using Microsoft.Msagl.Core;
+using System.Collections.Generic;
+using VoidCat.Agl.Core;
 
-namespace Microsoft.Msagl.Layout.Layered {
+namespace VoidCat.Agl.Layout.Layered {
     internal class EdgeComparerBySource : IComparer<LayerEdge> {
         int[] X;
         internal EdgeComparerBySource(int[] X) {

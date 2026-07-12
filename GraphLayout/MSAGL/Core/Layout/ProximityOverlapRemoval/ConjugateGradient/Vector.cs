@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient {
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient {
     /// <summary>
     /// Simple Vector class which allows to easily use operators.
     /// </summary>

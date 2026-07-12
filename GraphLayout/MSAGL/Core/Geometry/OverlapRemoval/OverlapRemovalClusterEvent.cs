@@ -9,7 +9,7 @@
 
 using System;
 
-namespace Microsoft.Msagl.Core.Geometry {
+namespace VoidCat.Agl.Core.Geometry {
     public partial class OverlapRemovalCluster {
         // An event signifies that the scan line has encountered the opening or closing border
         // of a node.  Thus, the ConstraintGenerator has a list that contains two events for

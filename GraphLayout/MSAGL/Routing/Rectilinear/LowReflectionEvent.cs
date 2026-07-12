@@ -4,9 +4,9 @@
 //
 // Copyright Microsoft Corporation.
 
-using Microsoft.Msagl.Core.Geometry;
+using VoidCat.Agl.Core.Geometry;
 
-namespace Microsoft.Msagl.Routing.Rectilinear {
+namespace VoidCat.Agl.Routing.Rectilinear {
     /// <summary>
     /// This records an intersection of a lookahead ray with an obstacle edge.
     /// </summary>

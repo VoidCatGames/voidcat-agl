@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Msagl.Core.Geometry;
-using Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient;
+using VoidCat.Agl.Core.Geometry;
+using VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.ConjugateGradient;
 
-namespace Microsoft.Msagl.Core.Layout.ProximityOverlapRemoval.StressEnergy {
+namespace VoidCat.Agl.Core.Layout.ProximityOverlapRemoval.StressEnergy {
     /// <summary>
     ///     Main class, which iteratively computes a layout according to the given votings and positions:
     ///     (paper: Graph Drawing by Stress Majorization by Emden R. Gansner, Yehuda Koren, Stephen North)
