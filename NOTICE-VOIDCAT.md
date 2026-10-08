@@ -52,6 +52,8 @@ upstream.
 6. **Rectilinear path search: inner loop trimmed** (`SsstRectilinearPath.cs`, `VertexEntry.cs`): cost weights
    read from fields, the target point read once per search, the direction to a neighbour computed once and passed
    down instead of recomputed, neighbour slots cleared inline. Every arithmetic expression is unchanged.
+7. **Rectilinear path search: entries are their own heap elements** (`VertexEntryQueue.cs`, `VertexEntry.cs`):
+   the heap index and priority live on the entry, not in a second object per entry. Same comparisons, same values.
 
 "Microsoft" is a trademark of Microsoft Corporation. This fork is not
 endorsed by, affiliated with, or supported by Microsoft.

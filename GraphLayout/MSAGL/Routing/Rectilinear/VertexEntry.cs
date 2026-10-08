@@ -51,9 +51,11 @@ namespace VoidCat.Agl.Routing.Rectilinear {
         public double Cost { get; private set; }
 
         /// <summary>
-        /// VoidCat fork: this entry's element in the <see cref="VertexEntryQueue"/> it was last enqueued in, or null once dequeued.
+        /// VoidCat fork: this entry's place in the <see cref="VertexEntryQueue"/> it was last enqueued in (0 once dequeued)
+        /// and its priority there — the fields the generic queue kept in a separate heap element.
         /// </summary>
-        internal VoidCat.Agl.Core.DataStructures.GenericHeapElement<VertexEntry> QueueElement;
+        internal int HeapIndex;
+        internal double HeapPriority;
 
         /// <summary>
         /// The vertex that this VertexEntry enters
