@@ -1,0 +1,159 @@
+From 0d73b1b0b18f0e2c3da016ad4155c32d6c9023de Mon Sep 17 00:00:00 2001
+From: Jeff <jeffrey.m.hersh@gmail.com>
+Date: Thu, 8 Oct 2026 14:16:09 -0400
+Subject: [PATCH 4/5] Rectilinear path search: vertex entries are their own
+ heap elements
+
+---
+ .../MSAGL/Routing/Rectilinear/VertexEntry.cs  |  6 ++-
+ .../Routing/Rectilinear/VertexEntryQueue.cs   | 42 ++++++++++---------
+ NOTICE-VOIDCAT.md                             |  2 +
+ 3 files changed, 28 insertions(+), 22 deletions(-)
+
+diff --git a/GraphLayout/MSAGL/Routing/Rectilinear/VertexEntry.cs b/GraphLayout/MSAGL/Routing/Rectilinear/VertexEntry.cs
+index 14dc390..4425c5f 100644
+--- a/GraphLayout/MSAGL/Routing/Rectilinear/VertexEntry.cs
++++ b/GraphLayout/MSAGL/Routing/Rectilinear/VertexEntry.cs
+@@ -51,9 +51,11 @@ namespace VoidCat.Agl.Routing.Rectilinear {
+         public double Cost { get; private set; }
+ 
+         /// <summary>
+-        /// VoidCat fork: this entry's element in the <see cref="VertexEntryQueue"/> it was last enqueued in, or null once dequeued.
++        /// VoidCat fork: this entry's place in the <see cref="VertexEntryQueue"/> it was last enqueued in (0 once dequeued)
++        /// and its priority there — the fields the generic queue kept in a separate heap element.
+         /// </summary>
+-        internal VoidCat.Agl.Core.DataStructures.GenericHeapElement<VertexEntry> QueueElement;
++        internal int HeapIndex;
++        internal double HeapPriority;
+ 
+         /// <summary>
+         /// The vertex that this VertexEntry enters
+diff --git a/GraphLayout/MSAGL/Routing/Rectilinear/VertexEntryQueue.cs b/GraphLayout/MSAGL/Routing/Rectilinear/VertexEntryQueue.cs
+index 9334036..1a6d2ee 100644
+--- a/GraphLayout/MSAGL/Routing/Rectilinear/VertexEntryQueue.cs
++++ b/GraphLayout/MSAGL/Routing/Rectilinear/VertexEntryQueue.cs
+@@ -1,27 +1,27 @@
+ using System;
+-using VoidCat.Agl.Core.DataStructures;
+ 
+ namespace VoidCat.Agl.Routing.Rectilinear {
+     /// <summary>
+     /// VoidCat fork: the rectilinear path search's priority queue. The same binary heap as
+     /// <see cref="GenericBinaryHeapPriorityQueue{T}"/> — the same array layout, the same comparisons and the same
+     /// sift order, so entries come out in exactly the same order, ties included — but each <see cref="VertexEntry"/>
+-    /// carries its own heap element instead of a Dictionary mapping entries to elements. That dictionary cost a hash,
+-    /// an insert and a remove per entry (2 million per Rectilinear re-route on a 107-event graph) for one lookup in
++    /// is its own heap element (<see cref="VertexEntry.HeapIndex"/>, <see cref="VertexEntry.HeapPriority"/>) instead of a
++    /// Dictionary mapping entries to separately allocated elements. That cost a hash, an insert, a remove and an extra
++    /// object per entry (2 million per Rectilinear re-route on a 107-event graph) for one lookup in
+     /// <see cref="DecreasePriority"/>.
+     /// </summary>
+     internal sealed class VertexEntryQueue {
+         const int InitialHeapCapacity = 16;
+ 
+-        GenericHeapElement<VertexEntry>[] A = new GenericHeapElement<VertexEntry>[InitialHeapCapacity + 1];
++        VertexEntry[] A = new VertexEntry[InitialHeapCapacity + 1];
+         int heapSize;
+ 
+         internal int Count { get { return heapSize; } }
+ 
+-        // The element is in THIS queue: an entry may still hold the element of an earlier search's queue
++        // The entry is in THIS queue: an entry may still carry the index of an earlier search's queue
+         // (multistage source entries are enqueued again), which the dictionary of the generic queue never held.
+-        bool Contains(GenericHeapElement<VertexEntry> h) {
+-            return h != null && h.indexToA >= 1 && h.indexToA <= heapSize && ReferenceEquals(A[h.indexToA], h);
++        bool Contains(VertexEntry h) {
++            return h.HeapIndex >= 1 && h.HeapIndex <= heapSize && ReferenceEquals(A[h.HeapIndex], h);
+         }
+ 
+         void SwapWithParent(int i) {
+@@ -30,21 +30,23 @@ namespace VoidCat.Agl.Routing.Rectilinear {
+             PutAtI(i, parent);
+         }
+ 
+-        void PutAtI(int i, GenericHeapElement<VertexEntry> h) {
++        void PutAtI(int i, VertexEntry h) {
+             A[i] = h;
+-            h.indexToA = i;
++            h.HeapIndex = i;
+         }
+ 
+         internal void Enqueue(VertexEntry element, double priority) {
+             if (heapSize == A.Length - 1) {
+-                var newA = new GenericHeapElement<VertexEntry>[A.Length * 2];
++                var newA = new VertexEntry[A.Length * 2];
+                 Array.Copy(A, 1, newA, 1, heapSize);
+                 A = newA;
+             }
+             heapSize++;
+             int i = heapSize;
+-            A[i] = element.QueueElement = new GenericHeapElement<VertexEntry>(i, priority, element);
+-            while (i > 1 && A[i >> 1].priority.CompareTo(priority) > 0) {
++            element.HeapIndex = i;
++            element.HeapPriority = priority;
++            A[i] = element;
++            while (i > 1 && A[i >> 1].HeapPriority.CompareTo(priority) > 0) {
+                 SwapWithParent(i);
+                 i >>= 1;
+             }
+@@ -53,22 +55,22 @@ namespace VoidCat.Agl.Routing.Rectilinear {
+         internal VertexEntry Dequeue() {
+             if (heapSize == 0)
+                 throw new InvalidOperationException();
+-            var ret = A[1].v;
++            var ret = A[1];
+             MoveQueueOneStepForward(ret);
+             return ret;
+         }
+ 
+         void MoveQueueOneStepForward(VertexEntry ret) {
+-            ret.QueueElement = null;   // the generic queue's cache.Remove(ret)
++            ret.HeapIndex = 0;   // the generic queue's cache.Remove(ret)
+             PutAtI(1, A[heapSize]);
+             int i = 1;
+             while (true) {
+                 int smallest = i;
+                 int l = i << 1;
+-                if (l <= heapSize && A[l].priority.CompareTo(A[i].priority) < 0)
++                if (l <= heapSize && A[l].HeapPriority.CompareTo(A[i].HeapPriority) < 0)
+                     smallest = l;
+                 int r = l + 1;
+-                if (r <= heapSize && A[r].priority.CompareTo(A[smallest].priority) < 0)
++                if (r <= heapSize && A[r].HeapPriority.CompareTo(A[smallest].HeapPriority) < 0)
+                     smallest = r;
+                 if (smallest != i)
+                     SwapWithParent(smallest);
+@@ -80,13 +82,13 @@ namespace VoidCat.Agl.Routing.Rectilinear {
+         }
+ 
+         internal void DecreasePriority(VertexEntry element, double newPriority) {
+-            var h = element.QueueElement;
++            var h = element;
+             // ignore the element if it is not in the queue
+             if (!Contains(h)) return;
+-            h.priority = newPriority;
+-            int i = h.indexToA;
++            h.HeapPriority = newPriority;
++            int i = h.HeapIndex;
+             while (i > 1) {
+-                if (A[i].priority.CompareTo(A[i >> 1].priority) < 0)
++                if (A[i].HeapPriority.CompareTo(A[i >> 1].HeapPriority) < 0)
+                     SwapWithParent(i);
+                 else
+                     break;
+diff --git a/NOTICE-VOIDCAT.md b/NOTICE-VOIDCAT.md
+index c305549..d8639fd 100644
+--- a/NOTICE-VOIDCAT.md
++++ b/NOTICE-VOIDCAT.md
+@@ -52,6 +52,8 @@ upstream.
+ 6. **Rectilinear path search: inner loop trimmed** (`SsstRectilinearPath.cs`, `VertexEntry.cs`): cost weights
+    read from fields, the target point read once per search, the direction to a neighbour computed once and passed
+    down instead of recomputed, neighbour slots cleared inline. Every arithmetic expression is unchanged.
++7. **Rectilinear path search: entries are their own heap elements** (`VertexEntryQueue.cs`, `VertexEntry.cs`):
++   the heap index and priority live on the entry, not in a second object per entry. Same comparisons, same values.
+ 
+ "Microsoft" is a trademark of Microsoft Corporation. This fork is not
+ endorsed by, affiliated with, or supported by Microsoft.
+-- 
+2.43.0
+
