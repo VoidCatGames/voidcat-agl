@@ -88,6 +88,18 @@ namespace VoidCat.Agl.Routing.Rectilinear {
             BendsImportance = 1.0;
         }
 
+        // VoidCat fork: where this search keeps its vertex entries. -1: on the vertices themselves, as upstream
+        // (one search at a time); 0..MaxSearchSlots-1: in that per-worker slot, so searches can run in parallel.
+        internal int Slot = -1;
+
+        private VertexEntry[] EntriesOf(VisibilityVertexRectilinear v) {
+            return this.Slot < 0 ? v.VertexEntries : v.SlotEntries(this.Slot);
+        }
+
+        private void SetEntry(VisibilityVertexRectilinear v, VertexEntry entry) {
+            if (this.Slot < 0) v.SetVertexEntry(entry); else v.SetSlotEntry(this.Slot, entry);
+        }
+
         private bool InitPath(VertexEntry[] sourceVertexEntries, VisibilityVertexRectilinear source, VisibilityVertexRectilinear target) {
             if ((source == target) || !InitEntryDirectionsAtTarget(target)) {
                 return false;
@@ -318,7 +330,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
             GetLengthAndNumberOfBendsToNeighborVertex(bestEntry, neigVer, weight, dirToNeighbor, out numberOfBends, out length);
             var cost = this.TotalCostFromSourceToVertex(length, numberOfBends) + HeuristicDistanceFromVertexToTarget(neigVer.Point, dirToNeighbor);
             if (cost < this.upperBoundOnCost) {
-                if (neigVer.VertexEntries == null) {
+                if (EntriesOf(neigVer) == null) {
                     this.visitedVertices.Add(neigVer);
                 }
                 EnqueueEntry(bestEntry, neigVer, length, numberOfBends, cost, dirToNeighbor);
@@ -327,7 +339,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
 
         private void EnqueueEntry(VertexEntry bestEntry, VisibilityVertexRectilinear neigVer, double length, int numberOfBends, double cost) {
             var entry = new VertexEntry(neigVer, bestEntry, length, numberOfBends, cost);
-            neigVer.SetVertexEntry(entry);
+            SetEntry(neigVer, entry);
             this.queue.Enqueue(entry, entry.Cost);
         }
 
@@ -335,7 +347,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
         // the VertexEntry constructor would otherwise compute again from the same two points.
         private void EnqueueEntry(VertexEntry bestEntry, VisibilityVertexRectilinear neigVer, double length, int numberOfBends, double cost, Direction dirToNeighbor) {
             var entry = new VertexEntry(neigVer, bestEntry, length, numberOfBends, cost, dirToNeighbor);
-            neigVer.SetVertexEntry(entry);
+            SetEntry(neigVer, entry);
             this.queue.Enqueue(entry, entry.Cost);
         }
 
@@ -500,7 +512,8 @@ namespace VoidCat.Agl.Routing.Rectilinear {
         private void ExtendPathToNeighborVertex(VertexEntry bestEntry, VisibilityVertexRectilinear neigVer, double weight) {
             var dirToNeighbor = CompassVector.PureDirectionFromPointToPoint(bestEntry.Vertex.Point, neigVer.Point);
 
-            var neigEntry = (neigVer.VertexEntries != null) ? neigVer.VertexEntries[CompassVector.ToIndex(dirToNeighbor)] : null;
+            var neigEntries = EntriesOf(neigVer);
+            var neigEntry = (neigEntries != null) ? neigEntries[CompassVector.ToIndex(dirToNeighbor)] : null;
             if (neigEntry == null) {
                 if (!this.CreateAndEnqueueReversedEntryToNeighborVertex(bestEntry, neigVer, weight)) {
                     this.CreateAndEnqueueEntryToNeighborVertex(bestEntry, neigVer, weight, dirToNeighbor);
@@ -518,9 +531,10 @@ namespace VoidCat.Agl.Routing.Rectilinear {
             // the new path may be going toward the target while the old one (from neigVer to bestEntry) went away from
             // the target.  So, if we score better going in the opposite direction, enqueue bestEntry->neigVer; ignore
             // neigVer->bestEntry as it probably won't be extended again.
-            if (bestEntry.Vertex.VertexEntries != null) {
+            var bestEntries = EntriesOf(bestEntry.Vertex);
+            if (bestEntries != null) {
                 var dirFromNeighbor = CompassVector.PureDirectionFromPointToPoint(neigVer.Point, bestEntry.Vertex.Point);
-                var entryFromNeighbor = bestEntry.Vertex.VertexEntries[CompassVector.ToIndex(dirFromNeighbor)];
+                var entryFromNeighbor = bestEntries[CompassVector.ToIndex(dirFromNeighbor)];
                 if (entryFromNeighbor != null) {
                     Debug.Assert(entryFromNeighbor.PreviousVertex == neigVer, "mismatch in turnback PreviousEntry");
                     Debug.Assert(entryFromNeighbor.PreviousEntry.IsClosed, "turnback PreviousEntry should be closed");
@@ -538,7 +552,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
         private void Cleanup()
         {
             foreach (var v in this.visitedVertices) {
-                v.RemoveVertexEntries();
+                if (this.Slot < 0) v.RemoveVertexEntries(); else v.RemoveSlotEntries(this.Slot);
             }
             this.visitedVertices.Clear();
             this.queue = null;

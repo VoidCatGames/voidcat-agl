@@ -54,6 +54,12 @@ upstream.
    down instead of recomputed, neighbour slots cleared inline. Every arithmetic expression is unchanged.
 7. **Rectilinear path search: entries are their own heap elements** (`VertexEntryQueue.cs`, `VertexEntry.cs`):
    the heap index and priority live on the entry, not in a second object per entry. Same comparisons, same values.
+8. **Optional parallel rectilinear path search** (`Core/AglThreading.cs`, new public API;
+   `MsmtRectilinearPath.cs`, `SsstRectilinearPath.cs`, `VisibilityVertexRectilinear.cs`):
+   `AglThreading.RectilinearPathSearchThreads` (default 1 = the upstream loop, unchanged). Above 1, a single-stage
+   path's source/target vertex pairs are searched on worker threads, each in its own per-vertex entry slot, and
+   folded in pair order; a pair is only ever taken from a search run with the cost bound the sequential loop would
+   have given it (pairs after an improvement are searched again), so the result is the sequential one.
 
 "Microsoft" is a trademark of Microsoft Corporation. This fork is not
 endorsed by, affiliated with, or supported by Microsoft.
