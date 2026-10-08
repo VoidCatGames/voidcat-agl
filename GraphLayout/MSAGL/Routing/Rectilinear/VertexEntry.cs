@@ -41,6 +41,11 @@ namespace VoidCat.Agl.Routing.Rectilinear {
         public double Cost { get; private set; }
 
         /// <summary>
+        /// VoidCat fork: this entry's element in the <see cref="VertexEntryQueue"/> it was last enqueued in, or null once dequeued.
+        /// </summary>
+        internal VoidCat.Agl.Core.DataStructures.GenericHeapElement<VertexEntry> QueueElement;
+
+        /// <summary>
         /// The vertex that this VertexEntry enters
         /// </summary>
         public VisibilityVertexRectilinear Vertex { get; private set; }

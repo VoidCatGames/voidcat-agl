@@ -44,6 +44,11 @@ upstream.
    iterated each vertex's in-edges through `IEnumerable`, boxing an enumerator per vertex expansion (4 million on a
    107-event graph's Rectilinear re-route); it now walks the list by index, as it already walked out-edges. Same
    edges, same order.
+5. **Rectilinear path search: priority queue without a dictionary**
+   (`Routing/Rectilinear/VertexEntryQueue.cs`, new; `SsstRectilinearPath.cs`, `VertexEntry.cs`): the search's queue
+   is the same binary heap as `GenericBinaryHeapPriorityQueue<T>` — same layout, comparisons and sift order, so
+   entries leave in the same order, ties included — but each entry carries its own heap element instead of a
+   `Dictionary` lookup (a hash, an insert and a remove per entry).
 
 "Microsoft" is a trademark of Microsoft Corporation. This fork is not
 endorsed by, affiliated with, or supported by Microsoft.

@@ -43,7 +43,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
         /// <summary>
         /// The priority queue for path extensions.
         /// </summary>
-        private GenericBinaryHeapPriorityQueue<VertexEntry> queue;
+        private VertexEntryQueue queue;   // VoidCat fork: was GenericBinaryHeapPriorityQueue<VertexEntry> — same order, no dictionary
 
         /// <summary>
         /// The list of vertices we've visited for all paths.
@@ -95,7 +95,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
             }
 
             // This path starts lower than upperBoundOnCost, so create our structures and process it.
-            this.queue = new GenericBinaryHeapPriorityQueue<VertexEntry>();
+            this.queue = new VertexEntryQueue();
             this.visitedVertices = new List<VisibilityVertexRectilinear> { source };
 
             if (sourceVertexEntries == null) {
