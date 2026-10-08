@@ -18,6 +18,16 @@ namespace VoidCat.Agl.Routing.Rectilinear {
             this.ResetEntry(prevEntry, length, numberOfBends, cost);
         }
 
+        /// <summary>
+        /// VoidCat fork: the constructor above, given the direction from prevEntry's vertex to <paramref name="vertex"/>
+        /// (the caller has just computed it from the same two points). prevEntry is non-null.
+        /// </summary>
+        internal VertexEntry(VisibilityVertexRectilinear vertex, VertexEntry prevEntry, double length, int numberOfBends, double cost, Direction direction) {
+            this.Vertex = vertex;
+            this.Direction = direction;
+            this.ResetEntry(prevEntry, length, numberOfBends, cost);
+        }
+
         public void ResetEntry(VertexEntry prevEntry, double length, int numberOfBends, double cost) {
             // A new prevEntry using the same previous vertex but a different entry to that vertex is valid here;
             // e.g. we could have prevEntry from S, which in turn had a prevEntry from E, replaced by prevEntry from

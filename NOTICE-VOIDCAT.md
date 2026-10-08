@@ -49,6 +49,9 @@ upstream.
    is the same binary heap as `GenericBinaryHeapPriorityQueue<T>` — same layout, comparisons and sift order, so
    entries leave in the same order, ties included — but each entry carries its own heap element instead of a
    `Dictionary` lookup (a hash, an insert and a remove per entry).
+6. **Rectilinear path search: inner loop trimmed** (`SsstRectilinearPath.cs`, `VertexEntry.cs`): cost weights
+   read from fields, the target point read once per search, the direction to a neighbour computed once and passed
+   down instead of recomputed, neighbour slots cleared inline. Every arithmetic expression is unchanged.
 
 "Microsoft" is a trademark of Microsoft Corporation. This fork is not
 endorsed by, affiliated with, or supported by Microsoft.

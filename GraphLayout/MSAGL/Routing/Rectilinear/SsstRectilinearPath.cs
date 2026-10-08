@@ -16,13 +16,18 @@ namespace VoidCat.Agl.Routing.Rectilinear {
     /// single source single target rectilinear path
     /// </summary>
     internal class SsstRectilinearPath {
-        internal double LengthImportance { get; set; }
-        internal double BendsImportance { get; set; }
+        // VoidCat fork: plain fields behind the properties — CombinedCost runs ~10 million times per
+        // Rectilinear re-route on a 107-event graph, and Mono does not inline the auto-property getters.
+        private double lengthImportance;
+        private double bendsImportance;
+        internal double LengthImportance { get { return lengthImportance; } set { lengthImportance = value; } }
+        internal double BendsImportance { get { return bendsImportance; } set { bendsImportance = value; } }
 
         // Only bends importance needs to be public.
         internal const double DefaultBendPenaltyAsAPercentageOfDistance = 4.0;
 
         private VisibilityVertexRectilinear Target { get; set; }
+        private Point targetPoint;
         private VisibilityVertexRectilinear Source { get; set; }
         private Direction EntryDirectionsToTarget { get; set; }
         private double upperBoundOnCost;
@@ -33,7 +38,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
         /// The cost of the path calculation
         /// </summary>
         private double CombinedCost(double length, double numberOfBends) {
-            return LengthImportance * length + BendsImportance * numberOfBends;
+            return lengthImportance * length + bendsImportance * numberOfBends;
         }
 
         private double TotalCostFromSourceToVertex(double length, double numberOfBends) {
@@ -88,6 +93,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
                 return false;
             }
             this.Target = target;
+            this.targetPoint = target.Point;   // VoidCat fork: read once per search, not per heuristic
             this.Source = source;
             double cost = this.TotalCostFromSourceToVertex(0, 0) + HeuristicDistanceFromVertexToTarget(source.Point, Direction. None);
             if (cost >= this.upperBoundOnCost) {
@@ -144,7 +150,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
         /// <param name="entryDirToVertex"></param>
         /// <returns></returns>
         private double HeuristicDistanceFromVertexToTarget(Point point, Direction entryDirToVertex) {
-            Point vectorToTarget = Target.Point - point;
+            Point vectorToTarget = targetPoint - point;
             if (ApproximateComparer.Close(vectorToTarget.X, 0) && ApproximateComparer.Close(vectorToTarget.Y, 0)) {
                 // We are at the target.
                 return this.targetCostAdjustment;
@@ -158,7 +164,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
             } else {
                 numberOfBends = GetNumberOfBends(entryDirToVertex, dirToTarget);
             }
-            return CombinedCost(ManhattanDistance(point, Target.Point), numberOfBends) + this.targetCostAdjustment;
+            return CombinedCost(ManhattanDistance(point, targetPoint), numberOfBends) + this.targetCostAdjustment;
         }
 
         private int GetNumberOfBends(Direction entryDirToVertex, Direction dirToTarget) {
@@ -295,10 +301,10 @@ namespace VoidCat.Agl.Routing.Rectilinear {
             }
         }
         
-        private void UpdateEntryToNeighborVertexIfNeeded(VertexEntry bestEntry, VertexEntry neigEntry, double weight) {
+        private void UpdateEntryToNeighborVertexIfNeeded(VertexEntry bestEntry, VertexEntry neigEntry, double weight, Direction dirToNeighbor) {
             int numberOfBends;
             double length;
-            var dirToNeighbor = GetLengthAndNumberOfBendsToNeighborVertex(bestEntry, neigEntry.Vertex, weight, out numberOfBends, out length);
+            GetLengthAndNumberOfBendsToNeighborVertex(bestEntry, neigEntry.Vertex, weight, dirToNeighbor, out numberOfBends, out length);
             if (CombinedCost(length, numberOfBends) < CombinedCost(neigEntry.Length, neigEntry.NumberOfBends)) {
                 var newCost = this.TotalCostFromSourceToVertex(length, numberOfBends) + HeuristicDistanceFromVertexToTarget(neigEntry.Vertex.Point, dirToNeighbor);
                 neigEntry.ResetEntry(bestEntry, length, numberOfBends, newCost);
@@ -306,21 +312,29 @@ namespace VoidCat.Agl.Routing.Rectilinear {
             }
         }
 
-        private void CreateAndEnqueueEntryToNeighborVertex(VertexEntry bestEntry, VisibilityVertexRectilinear neigVer, double weight) {
+        private void CreateAndEnqueueEntryToNeighborVertex(VertexEntry bestEntry, VisibilityVertexRectilinear neigVer, double weight, Direction dirToNeighbor) {
             int numberOfBends;
             double length;
-            var dirToNeighbor = GetLengthAndNumberOfBendsToNeighborVertex(bestEntry, neigVer, weight, out numberOfBends, out length);
+            GetLengthAndNumberOfBendsToNeighborVertex(bestEntry, neigVer, weight, dirToNeighbor, out numberOfBends, out length);
             var cost = this.TotalCostFromSourceToVertex(length, numberOfBends) + HeuristicDistanceFromVertexToTarget(neigVer.Point, dirToNeighbor);
             if (cost < this.upperBoundOnCost) {
                 if (neigVer.VertexEntries == null) {
                     this.visitedVertices.Add(neigVer);
                 }
-                EnqueueEntry(bestEntry, neigVer, length, numberOfBends, cost);
+                EnqueueEntry(bestEntry, neigVer, length, numberOfBends, cost, dirToNeighbor);
             }
         }
 
         private void EnqueueEntry(VertexEntry bestEntry, VisibilityVertexRectilinear neigVer, double length, int numberOfBends, double cost) {
             var entry = new VertexEntry(neigVer, bestEntry, length, numberOfBends, cost);
+            neigVer.SetVertexEntry(entry);
+            this.queue.Enqueue(entry, entry.Cost);
+        }
+
+        // VoidCat fork: dirToNeighbor is PureDirectionFromPointToPoint(bestEntry.Vertex.Point, neigVer.Point), which
+        // the VertexEntry constructor would otherwise compute again from the same two points.
+        private void EnqueueEntry(VertexEntry bestEntry, VisibilityVertexRectilinear neigVer, double length, int numberOfBends, double cost, Direction dirToNeighbor) {
+            var entry = new VertexEntry(neigVer, bestEntry, length, numberOfBends, cost, dirToNeighbor);
             neigVer.SetVertexEntry(entry);
             this.queue.Enqueue(entry, entry.Cost);
         }
@@ -334,6 +348,16 @@ namespace VoidCat.Agl.Routing.Rectilinear {
                 numberOfBends++;
             }
             return directionToVertex;
+        }
+
+        // VoidCat fork: the same as the method above, with the direction from prevEntry's vertex to `vertex` given.
+        private static void GetLengthAndNumberOfBendsToNeighborVertex(VertexEntry prevEntry,
+                    VisibilityVertex vertex, double weight, Direction directionToVertex, out int numberOfBends, out double length) {
+            length = prevEntry.Length + ManhattanDistance(prevEntry.Vertex.Point, vertex.Point)*weight;
+            numberOfBends = prevEntry.NumberOfBends;
+            if (prevEntry.Direction != Direction. None && directionToVertex != prevEntry.Direction) {
+                numberOfBends++;
+            }
         }
 
         internal static double ManhattanDistance(Point a, Point b) {
@@ -384,8 +408,10 @@ namespace VoidCat.Agl.Routing.Rectilinear {
                 bestEntry.IsClosed = true;
 
                 // PerfNote: Array.ForEach is optimized, but don't use .Where.
-                foreach (var bendNeighbor in this.nextNeighbors) {
-                    bendNeighbor.Clear();
+                // VoidCat fork: NextNeighbor.Clear() inline.
+                for (var n = 0; n < 3; n++) {
+                    this.nextNeighbors[n].Vertex = null;
+                    this.nextNeighbors[n].Weight = double.NaN;
                 }
                 var preferredBendDir = Right(bestEntry.Direction);
                 this.ExtendPathAlongInEdges(bestEntry, bestVertex.InEdgeList, preferredBendDir);
@@ -477,10 +503,10 @@ namespace VoidCat.Agl.Routing.Rectilinear {
             var neigEntry = (neigVer.VertexEntries != null) ? neigVer.VertexEntries[CompassVector.ToIndex(dirToNeighbor)] : null;
             if (neigEntry == null) {
                 if (!this.CreateAndEnqueueReversedEntryToNeighborVertex(bestEntry, neigVer, weight)) {
-                    this.CreateAndEnqueueEntryToNeighborVertex(bestEntry, neigVer, weight);
+                    this.CreateAndEnqueueEntryToNeighborVertex(bestEntry, neigVer, weight, dirToNeighbor);
                 }
             } else if (!neigEntry.IsClosed) {
-                this.UpdateEntryToNeighborVertexIfNeeded(bestEntry, neigEntry, weight);
+                this.UpdateEntryToNeighborVertexIfNeeded(bestEntry, neigEntry, weight, dirToNeighbor);
             }
         }
 
