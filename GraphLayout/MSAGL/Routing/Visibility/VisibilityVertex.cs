@@ -29,6 +29,13 @@ namespace VoidCat.Agl.Routing.Visibility
             get { return _inEdges; }
         }
 
+        // VoidCat fork: the in-edges as the list they are, so the rectilinear path search can walk them by
+        // index — the same edges in the same order, without an enumerator boxed per vertex expansion.
+        internal List<VisibilityEdge> InEdgeList
+        {
+            get { return _inEdges; }
+        }
+
         readonly RbTree<VisibilityEdge> _outEdges;
         /* VisibilityEdge prev; */
 

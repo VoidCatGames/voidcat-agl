@@ -39,6 +39,11 @@ upstream.
    It does not assert any change of copyright: the renamed code remains
    © Microsoft Corporation under the MIT license, with VoidCat
    modifications © VoidCat Studios LLC under the same license.
+4. **Rectilinear path search: in-edges walked by index**
+   (`Routing/Rectilinear/SsstRectilinearPath.cs`, `Routing/Visibility/VisibilityVertex.cs`): the A* search
+   iterated each vertex's in-edges through `IEnumerable`, boxing an enumerator per vertex expansion (4 million on a
+   107-event graph's Rectilinear re-route); it now walks the list by index, as it already walked out-edges. Same
+   edges, same order.
 
 "Microsoft" is a trademark of Microsoft Corporation. This fork is not
 endorsed by, affiliated with, or supported by Microsoft.

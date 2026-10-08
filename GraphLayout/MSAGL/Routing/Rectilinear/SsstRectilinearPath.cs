@@ -388,7 +388,7 @@ namespace VoidCat.Agl.Routing.Rectilinear {
                     bendNeighbor.Clear();
                 }
                 var preferredBendDir = Right(bestEntry.Direction);
-                this.ExtendPathAlongInEdges(bestEntry, bestVertex.InEdges, preferredBendDir);
+                this.ExtendPathAlongInEdges(bestEntry, bestVertex.InEdgeList, preferredBendDir);
                 this.ExtendPathAlongOutEdges(bestEntry, bestVertex.OutEdges, preferredBendDir);
                 foreach (var bendNeighbor in this.nextNeighbors) {
                     if (bendNeighbor.Vertex != null) {
@@ -406,9 +406,10 @@ namespace VoidCat.Agl.Routing.Rectilinear {
             return null;
         }
 
-        private void ExtendPathAlongInEdges(VertexEntry bestEntry, IEnumerable<VisibilityEdge> edges, Direction preferredBendDir) {
-            foreach (var edge in edges) {
-                ExtendPathAlongEdge(bestEntry, edge, true, preferredBendDir);
+        private void ExtendPathAlongInEdges(VertexEntry bestEntry, List<VisibilityEdge> edges, Direction preferredBendDir) {
+            // VoidCat fork: by index, as ExtendPathAlongOutEdges already avoids GetEnumerator — same edges, same order.
+            for (var i = 0; i < edges.Count; i++) {
+                ExtendPathAlongEdge(bestEntry, edges[i], true, preferredBendDir);
             }
         }
 
