@@ -787,13 +787,24 @@ namespace VoidCat.Agl.Core.Geometry {
                    PointToTheLeftOfLineOrOnLine(p, apex, rightSideConePoint);
         }
 
-        static Random rnd = new Random(1);
+        // VoidCat fork: was one static Random(1) for the whole process, so the bundler's random directions — and
+        // with them the routes of multi-edges and bundled Splines — depended on every layout run before this one.
+        // Now each spline routing run starts its own Random(1) (SplineRouter.RunInternal), per thread: the same
+        // input gives the same routes every time, the routes a fresh process gave.
+        [ThreadStatic] static Random rnd;
+
+        internal static Random RandomSource {
+            get { return rnd ?? (rnd = new Random(1)); }
+            set { rnd = value; }
+        }
+
         ///<summary>
         ///creates random unit point
         ///</summary>
         internal static Point RandomPoint() {
-            double x = -1 + 2 * rnd.NextDouble();
-            double y = -1 + 2 * rnd.NextDouble();
+            var random = RandomSource;
+            double x = -1 + 2 * random.NextDouble();
+            double y = -1 + 2 * random.NextDouble();
             return new Point(x, y).Normalize();
         }
     }

@@ -157,9 +157,16 @@ namespace VoidCat.Agl.Routing {
     protected override void RunInternal() {
       if (!edgeGeometriesEnumeration.Any())
         return;
-      GetOrCreateRoot();
-      RouteOnRoot();
-      RemoveRoot();
+      // VoidCat fork: a fresh random sequence for this run (see Point.RandomSource), put back after it.
+      var outerRandom = Point.RandomSource;
+      Point.RandomSource = new Random(1);
+      try {
+        GetOrCreateRoot();
+        RouteOnRoot();
+        RemoveRoot();
+      } finally {
+        Point.RandomSource = outerRandom;
+      }
       /*     var ll = new List<DebugCurve>();
            ll.AddRange(rootShapes.Select(s=>shapesToTightLooseCouples[s].TightPolyline).Select(p=>new DebugCurve(100,0.05,"black", p)));
            ll.AddRange(geometryGraph.Edges.Select(s => new DebugCurve(100, 0.05, "black", s.Curve)));               

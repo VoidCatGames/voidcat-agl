@@ -60,6 +60,11 @@ upstream.
    path's source/target vertex pairs are searched on worker threads, each in its own per-vertex entry slot, and
    folded in pair order; a pair is only ever taken from a search run with the cost bound the sequential loop would
    have given it (pairs after an improvement are searched again), so the result is the sequential one.
+9. **Spline routes no longer depend on earlier layouts** (`Core/Geometry/Point.cs`, `Routing/SplineRouter.cs`):
+   the bundler's random step directions (`Point.RandomPoint`, used by simulated annealing) came from one static
+   `Random(1)` for the whole process, so multi-edges and bundled Splines came out differently depending on what
+   had been laid out before. Each `SplineRouter` run now starts its own `Random(1)`, per thread, and puts the
+   previous one back afterwards. A layout now gives the routes the first layout in a fresh process gave.
 
 "Microsoft" is a trademark of Microsoft Corporation. This fork is not
 endorsed by, affiliated with, or supported by Microsoft.
